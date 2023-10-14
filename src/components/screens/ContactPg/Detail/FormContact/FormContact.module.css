@@ -80,4 +80,9 @@ textarea
     line-height: 24px;
     letter-spacing: 0.08px;
     cursor: pointer;
+    transition: 0.4s;
+}
+.btn button:hover
+{
+    background-color: #8cce2f
 }
