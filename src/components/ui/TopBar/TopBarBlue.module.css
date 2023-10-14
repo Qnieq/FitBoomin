@@ -70,6 +70,10 @@ a
     line-height: 22px;
     letter-spacing: 0.07px;
 }
+.log_in:hover
+{
+    background-color: #b5babe;
+}
 .sign_up
 {
     border: #bcff5e 1px solid;
@@ -85,6 +89,11 @@ a
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.07px;
+    transition: 0.4s;
+}
+.sign_up:hover
+{
+    background-color: #8cce2f
 }
 .count
 {
