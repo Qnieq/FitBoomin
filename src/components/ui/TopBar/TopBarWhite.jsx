@@ -11,7 +11,7 @@ const TopBarWhite = () => {
                 <div className={styles.menu}>
                     <ul className={styles.menu_list}>
                         <li className={styles.menu_item}>
-                            <NavLink  to="/home" style={({ isActive }) => ({
+                            <NavLink  to="/FitBoomin/" style={({ isActive }) => ({
                                 color: isActive ? '#1C1C1E' : '#8E8E93',
                             })}>Home</NavLink>
                         </li>
