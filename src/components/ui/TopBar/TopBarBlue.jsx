@@ -11,7 +11,7 @@ const TopBarBlue = () => {
                 <div className={styles.menu}>
                     <ul className={styles.menu_list}>
                         <li className={styles.menu_item}>
-                            <NavLink  to="/home" style={({ isActive }) => ({
+                            <NavLink  to="/FitBoomin/" style={({ isActive }) => ({
                                 color: isActive ? '#fff' : '#fff',
                                 opacity: isActive ? 1 : 0.56,
                             })}>Home</NavLink>
