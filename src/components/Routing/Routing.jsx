@@ -26,8 +26,7 @@ const Routing = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/FitBoomin" element={<Home />} />
                 <Route path="/programs" element={<Programs />} />
                 <Route path="/trainers" element={<Trainers />} />
                 <Route path="/membership" element={<Membership />} />
