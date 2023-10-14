@@ -19,7 +19,7 @@ const Success = () => {
                             <p>You are successfully signed</p>
                         </div>
                     </div>
-                    <Link to={'/home'}><button>Continue</button></Link>
+                    <Link to={'/FitBoomin/'}><button>Continue</button></Link>
                 </div>
             </div>
         </>
