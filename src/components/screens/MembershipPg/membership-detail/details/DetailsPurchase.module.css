@@ -1,0 +1,304 @@
+.container
+{
+    height: 1350px;
+    width: 100%;
+    background: #F9F9FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 960px);
+}
+.about_plan
+{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px; 
+}
+.title h6
+{
+    color:#1C1C1E;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: 0.36px;
+}
+.title h6 span
+{
+    font-weight: 400;
+}
+.title p
+{
+    width: 500px;
+    color:#636366;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.featured
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.features_list
+{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+}
+.description
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.description h5
+{
+    color:#AEAEB2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.description h4
+{
+    color:#064BB4;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.09px;
+}
+.features_list img
+{
+    width: 48px;
+    height: 48px;
+}
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.about_title
+{
+    color: #1C1C1E;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.12px;
+}
+.desc
+{
+    width: 760px;
+    color:#636366;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.09px;
+}
+.desc span
+{
+    color: #064BB4;
+    font-weight: 500;
+}
+.packege_for
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.purchase_plan
+{
+    display: inline-flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+.purchase_title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.purchase_title h5
+{
+    color:#1C1C1E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.09px;
+}
+.purchase_title p
+{
+    width: 351px;
+    color: #636366;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.features_purchase
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.features_purchase h3
+{
+    color: #1C1C1E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.feature_list
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.feature_list h5
+{
+    color:#1C1C1E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.feature_list img
+{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    border: 1px solid var(--additional-colors-line, #E9EBED);
+}
+.field
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+form
+{
+    width: 100%;
+}
+label
+{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    color:#1C1C1E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+label input
+{
+    display: flex;
+    height: 52px;
+    padding: 0px 16px;
+    align-items: center;
+    align-self: stretch;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+.price
+{
+    color: #09080D;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+}
+.price span
+{
+    color:#8E8E93;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.cta
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+.cta button
+{
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.08px;
+    cursor: pointer;
+}
+.purchase
+{
+    background: #bcff5e;
+    border: none;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.08px;
+    cursor: pointer;
+    color: #1C1C1E;
+}
+.cta button
+{
+    background: none;
+    border: 1px solid #1C1C1E;
+}

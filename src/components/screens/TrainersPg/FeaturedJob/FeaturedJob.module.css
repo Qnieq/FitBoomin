@@ -1,0 +1,109 @@
+.container
+{
+    background: #F9F9FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 520px;
+}
+.title h6
+{
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0.24px;
+}
+.title p
+{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.job
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 24px;
+    gap: 40px;
+}
+.job_list:nth-child(2)
+{
+    background: #064BB4;
+}
+.job_list
+{
+    display: flex;
+    padding: 32px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+.logo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.logo h6
+{
+    color: #1C1C1E;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.12px;
+}
+.logo img
+{
+    width: 48px;
+    height: 48px;
+}
+.text
+{
+    width: 282px;
+}
+.text p
+{
+    color: #636366;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.job_list:nth-child(2) .logo h6
+{
+    color: #fff;
+}
+.job_list:nth-child(2) .text p
+{
+    color: #D1D1D6;
+}

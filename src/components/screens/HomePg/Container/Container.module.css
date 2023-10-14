@@ -1,0 +1,117 @@
+.container
+{
+    display: flex;
+    width: 100%;
+    height: 1680px;
+    background: #F9F9FB;
+    flex-direction: column;
+    align-items: center;
+}
+.titleText
+{
+    width: 582px;
+    margin-top: 120px;
+    margin-bottom: 56px;
+}
+.titleText h3
+{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px; 
+    letter-spacing: 0.24px;
+    text-transform: capitalize;
+}
+.content
+{
+    display: inline-flex;
+    gap: 48px;
+    width: calc(100% - 960px);
+    height: 580px;
+    align-items: center;
+
+}
+.card_list
+{
+    width: 524px;
+    background: #fff;
+    display: flex;
+    padding: 32px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    border-radius: 20px;
+}
+.logo_title
+{
+    width: 393px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.16px;
+}
+.logo_title img
+{
+    width: 48px;
+    height: 48px;
+}
+.points
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.feature
+{
+    display: flex;
+    gap: 12px;
+}
+.points .feature h5
+{
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.09px;
+}
+.points .feature img
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    border: 1px solid  #E9EBED;
+}
+.line
+{
+    width: 308px;
+    height: 0px;
+    border: 1px solid  #E9EBED;
+}
+.button
+{
+    display: flex;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: none;
+    background: #bcff5e;
+    color: #1C1C1E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; 
+    letter-spacing: 0.08px;
+    cursor: pointer;
+}
+.content_second
+{
+    display: flex;
+    gap: 48px;
+    width: calc(100% - 960px);
+    height: 580px;
+    margin-top: 120px;
+    align-items: center;
+    flex-direction: row-reverse;
+}

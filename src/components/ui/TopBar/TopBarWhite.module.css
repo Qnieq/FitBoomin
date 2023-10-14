@@ -1,0 +1,117 @@
+.fullBar
+{
+    height: 86px;
+    width: 100%;
+    background: #F9F9FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+.container
+{
+    width: calc(100% - 960px);
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.menu
+{
+    display: flex;
+    align-items: center;
+}
+.menu_list
+{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+a
+{
+    color: #8E8E93;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.menu_list.active
+{
+    color: #1C1C1E;
+}
+.buy_menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.buy_menu a
+{
+    display: flex;
+}
+.buy
+{
+    width: 32px;
+    cursor: pointer;
+    display: flex;
+}
+.buy_menu button
+{
+    width: 90px;
+    height: 46px;
+    border-radius: 20px;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+.log_in
+{
+    color: #1C1C1E;
+    border: #1C1C1E 1px solid;
+    background-color: transparent;
+    display: flex;
+    width: 73px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.sign_up
+{
+    border: #bcff5e 1px solid;
+    background: #bcff5e;
+    color: #000;
+    display: flex;
+    width: 73px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.count
+{
+    display: flex;
+    background: #ff4747;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    transform: translateX(-10px);
+}

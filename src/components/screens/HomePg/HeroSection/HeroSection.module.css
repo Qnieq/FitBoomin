@@ -1,0 +1,175 @@
+.HeroSection
+{
+    background: #064bb4;
+    width: 100%;
+    height: 1286px;
+    display: flex;
+}
+.motivation
+{
+    margin-left: 480px;
+    margin-top: 148px;
+    color: #fff;
+    z-index: 2;
+}
+.motivation_words
+{
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 80px;
+    letter-spacing: 0.36px;
+}
+.motivation_words span
+{
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0.36px;
+}
+.motivation p
+{
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    color: #C7C7CC;
+}
+.motivation button
+{
+    background-color: #bcff5e;
+    border: #bcff5e 1px solid;
+    border-radius: 24px;
+    width: 176px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    margin-top: 48px;
+    cursor: pointer;
+}
+.bg
+{
+    display: flex;
+    width: 824px;
+    height: 949px;
+    z-index: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    margin-top: 100px;
+}
+.container
+{
+    display: flex;
+    width: 824px;
+    height: 949px;
+    position: absolute;
+    transform: translateX(-33px);
+}
+.bodybuilder
+{
+    width: 824px;
+    height: 949px;
+}
+.bodybuilderBody
+{
+    margin-top: 258.6px;
+    position: absolute;
+    width: 824px;
+    height: 135px;
+}
+.muscle_rate
+{
+    margin-left: 350px;
+    margin-right: 60px;
+}
+.rate
+{
+    width: 103px;
+    height: 110px;  
+    display: inline-flex;
+    padding: 12px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+.rate h6
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+    opacity: 0.8;
+}
+.rate h5
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.09px;
+}
+.rate img
+{
+    width: 32px;
+    height: 32px;
+}
+.sponsers
+{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+}
+.brends
+{
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+}
+.items
+{
+    display: flex;
+    width: calc(100% - 960px);
+    margin-top: 120px;
+    position: absolute;
+}
+.progText
+{
+    display: flex;
+    flex-direction: column;
+    width: 249px;
+    background-color: transparent;
+    gap: 16px;
+    margin-left: 64px;
+}
+.progText h1
+{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+}
+.progText p
+{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}

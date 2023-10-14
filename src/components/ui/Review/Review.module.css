@@ -1,0 +1,149 @@
+.review
+{
+    background: #F9F9FB;
+    width: 100%;
+    height: 756px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+}
+.comments
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.chips
+{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--additional-colors-line, #E9EBED);
+}
+.chips h6
+{
+    color: #064BB4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.aplication
+{
+    width: 317px;
+}
+.aplication h2
+{
+    color: #171725;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.content
+{
+    width: 680px;
+    height: 260px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.description
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.member h6
+{
+    color: #AEAEB2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.text p
+{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.12px;
+}
+.user_info
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.user
+{
+    width: 56px;
+    height: 56px;
+}
+.user img
+{
+    border-radius: 50%;
+}
+.user_name
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+.user_name h6
+{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.user_class h6
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.action
+{
+    width: 130px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+.slider
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.slider div
+{
+    background: #064BB4;
+    border-radius: 8px;
+    width: 16px;
+    height: 8px;
+}

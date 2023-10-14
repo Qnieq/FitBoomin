@@ -1,0 +1,263 @@
+.container
+{
+    display: flex;
+    width: 100%;
+    height: 1315px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(9, 8, 13, 0.12);
+    backdrop-filter: blur(10px);
+
+}
+.popUp
+{
+    display: inline-flex;
+    padding: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 24px;
+    background:#FFF;
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
+
+}
+.content
+{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+.content h3
+{
+    color:#1C1C1E;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+    letter-spacing: 0.16px;
+}
+.content h3 span
+{
+    font-size: 32px;
+    font-weight: 400;
+}
+.variants
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.cta
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.cta img
+{
+    width: 24px;
+    height: 24px;
+}
+.cta button
+{
+    display: flex;
+    width: 238px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border-radius: 24px;
+    border: 1px solid #E9EBED;
+    color: #1C1C1E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+    cursor: pointer;
+}
+.login
+{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+.login h6
+{
+    color:  #8E8E93;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.login span
+{
+    width: 177px;
+    height: 1px;
+    background: #E9EBED;
+}
+form
+{
+    align-items: flex-start;
+}
+form label
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+.email
+{
+    padding-left: 25px;
+    width: 460px;
+}
+.email::placeholder
+{
+    padding: 25px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+}
+form label button
+{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    background: #BCFF5E;
+    color: #1C1C1E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    cursor: pointer;
+}
+form label a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-self: stretch;
+    border: none;
+    border-radius: 24px;
+    background: none;
+    cursor: pointer;
+}
+form label button:disabled
+{
+    background: #73bb0e;
+    cursor: auto;
+}
+.agree
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #EAEDF1;
+    width: 24px;
+    height: 24px;
+    border: 0.15em solid #EAEDF1;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+  
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.70em;
+    height: 0.70em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    background-color: #1C1C1E;
+}
+.agree p
+{
+    color: #AEAEB2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+    display: contents;
+}
+.agree p a
+{
+    color:#064BB4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.already
+{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+.already p
+{
+    color: #8E8E93;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.already p a
+{
+    color:#064BB4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08px;  
+}
+.close
+{
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 10px;
+    transform: translate(295px, -360px);
+    border-radius: 32px;
+    position: absolute;
+    background: #F9F9FB;
+    box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.10);
+}

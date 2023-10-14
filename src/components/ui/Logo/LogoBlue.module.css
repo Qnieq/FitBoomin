@@ -1,0 +1,26 @@
+a
+{
+    cursor: pointer;
+}
+.title
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.logo
+{
+    width: 40px;
+}
+.nickname
+{
+    color: #064BB4;
+    font-weight: 750;
+    letter-spacing: 1.3px;
+}
+.nickname_min
+{
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}

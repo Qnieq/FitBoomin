@@ -1,0 +1,33 @@
+.btn.active
+{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background:#BCFF5E;
+    transition: 0.5s;
+}
+.circle.active
+{
+    background:#000000;
+    transition: 0.5s;
+    width: 15px;
+    height: 15px;
+}
+.add_to_cart.active
+{
+    display: none;
+}
+.add_to_cart.inactive
+{
+    display: flex;
+}
+.agree.active
+{
+    display: flex;
+}
+.agree.inactive
+{
+    display: none;
+}

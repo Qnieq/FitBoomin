@@ -1,0 +1,66 @@
+.programs
+{
+    background: #F9F9FB; 
+    display: flex;
+    padding: 120px 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    height: 850px;
+    width: 100%;
+}
+.cart
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.chips
+{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--additional-colors-line, #E9EBED);
+}
+.chips h6
+{
+    color: #064BB4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.aplication
+{
+    width: 700px;
+}
+.aplication h2
+{
+    color: #171725;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+@media screen and ( min-width: 1200px){
+    .programs
+    {
+        width: 100%;
+    }
+}   

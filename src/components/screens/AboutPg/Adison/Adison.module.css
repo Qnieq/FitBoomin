@@ -1,0 +1,150 @@
+.container
+{
+    width: 100%;
+    height: 925px;
+    background: #064BB4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about_me
+{
+    display: flex;
+    width: calc(100% - 960px);
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(79px);
+    gap: 12px;
+}
+.about_me_title
+{
+    display: inline-flex;
+    width: max-content;
+    padding: 8px 16px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #BCFF5E;
+}
+.about_me_title h5
+{
+    color:#BCFF5E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.about_me_text
+{
+    display: flex;
+    justify-content: space-between;
+}
+.about_adison
+{
+    width: 510px;
+}
+.about_adison h6
+{
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 80px; 
+    letter-spacing: 0.36px;
+}
+.about_adison span
+{
+    color:#FFF;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: 0.36px;
+}
+.story
+{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.story h2
+{
+    color: var(--additional-colors-white, #FFF);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.12px;
+}
+.story p
+{
+    width: 535px;
+    color: var(--grayscale-20, #D1D1D6);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.09px;
+}
+.about_me_img
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 620px;
+}
+.about_me_img img
+{
+    width: 579px;
+    height: 558px;
+}
+.experience
+{
+    display: inline-flex;
+    position: absolute;
+    padding: 20px;
+    align-items: flex-start;
+    width: 213px;
+    gap: 8px;
+    border-radius: 16px;
+    background: linear-gradient(76deg, rgba(255, 255, 255, 0.24) 3.01%, rgba(255, 255, 255, 0.00) 112.22%);
+    box-shadow: 48px 48px 80px 0px rgba(8, 23, 45, 0.12);
+    backdrop-filter: blur(10px);
+}
+.experience img
+{
+    width: 32px;
+    height: 32px;
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+.title h3
+{
+    color:#FFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.16px;
+}
+.title p
+{
+    color:#FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.experience:nth-last-child(1)
+{
+    transform: translate(100%, -350px);
+}
+.experience:nth-last-child(2)
+{
+    transform: translate(-120%, -150px);
+    background: linear-gradient(257deg, rgba(255, 255, 255, 0.24) -18.18%, rgba(255, 255, 255, 0.00) 118.08%);
+    box-shadow: 48px 48px 80px 0px rgba(8, 23, 45, 0.12);
+}

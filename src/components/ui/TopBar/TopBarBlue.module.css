@@ -1,0 +1,110 @@
+.fullBar
+{
+    height: 86px;
+    width: 100%;
+    background: #064bb4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    
+}
+.container
+{
+    width: calc(100% - 960px);
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    min-width: 60%;
+}
+.menu
+{
+    display: flex;
+    align-items: center;
+}
+.menu_list
+{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+a
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.buy_menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.buy_menu a
+{
+    display: flex;
+}
+.buy
+{
+    width: 32px;
+    cursor: pointer;
+    display: flex;
+}
+.log_in
+{
+    color: #fff;
+    border: #fff 1px solid;
+    background-color: transparent;
+    display: flex;
+    width: 73px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.sign_up
+{
+    border: #bcff5e 1px solid;
+    background: #bcff5e;
+    color: #000;
+    display: flex;
+    width: 73px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.count
+{
+    display: flex;
+    background: #ff4747;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    transform: translateX(-10px);
+}
+@media screen and (max-width: 1000px) {
+    .container
+    {
+        width: calc(50% - 240px);
+    }
+}

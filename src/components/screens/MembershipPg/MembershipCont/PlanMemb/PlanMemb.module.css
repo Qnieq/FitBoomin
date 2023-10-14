@@ -1,0 +1,114 @@
+.plan
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+.plan_list
+{
+    background: #fff;
+    border-radius: 24px;
+    display: flex;
+    padding: 32px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 290px;
+    height: 310px;
+}
+.plan_item
+{
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+.plan_item_price
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.plan_item_price h5
+{
+    color: #1C1C1E;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+}
+.plan_item_price h5 span
+{
+    color: #AEAEB2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.plan_item_price h6
+{
+    color: #064BB4;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+}
+.plan_item_description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+.button_plan
+{
+    display: flex;
+    width: 100%;
+}
+.purchase
+{
+    display: flex;
+    width: 100%;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: none;
+    background: #bcff5e;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; 
+    letter-spacing: 0.08px;
+    cursor: pointer;
+    color: #1C1C1E;
+}
+.plan_list p
+{
+    color: #3A3A3C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+
+.plan_list:nth-child(2)
+{
+    background: #064BB4;
+}
+.plan_list:nth-child(2) h5
+{
+    color: #FFF;
+}
+.plan_list:nth-child(2) p
+{
+    color: #FFF;
+}
+.plan_list:nth-child(2) h6
+{
+    color: #FFF;
+}
