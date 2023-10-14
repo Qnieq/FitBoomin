@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className={styles.menu}>
                     <ul className={styles.navList}>
                         <li className={styles.navItem}>
-                            <NavLink to="/home" className={styles.navLink}>Home</NavLink>
+                            <NavLink to="/FitBoomin/" className={styles.navLink}>Home</NavLink>
                         </li>
                         <li className={styles.navItem}>
                             <NavLink to="/programs" className={styles.navLink}>Programs</NavLink>
@@ -28,9 +28,6 @@ const Footer = () => {
                         </li>
                     </ul>
                     <ul className={styles.navList}>
-                        {/* <li className={styles.navItem}>
-                            <NavLink to="/home/blog" className={styles.navLink}>Blog</NavLink>
-                        </li> */}
                         <li className={styles.navItem}>
                             <NavLink to="/contact" className={styles.navLink}>Contact</NavLink>
                         </li>
