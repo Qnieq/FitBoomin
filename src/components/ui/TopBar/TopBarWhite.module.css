@@ -85,7 +85,7 @@ a
 }
 .log_in:hover
 {
-    background-color: #b5babe;
+    background-color: hsla(0, 0%, 61%, 0.87);
 }
 .sign_up
 {
