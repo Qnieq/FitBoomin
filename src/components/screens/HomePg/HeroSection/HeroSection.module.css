@@ -145,6 +145,11 @@
     margin-top: 48px;
     cursor: pointer;
     color: #1C1C1E;
+    transition: 0.4s;
+}
+.book:hover
+{
+    background-color: #8cce2f
 }
 .items
 {
