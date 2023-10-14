@@ -86,7 +86,7 @@ a
 }
 .log_in:hover
 {
-    background-color: hsla(0, 0%, 61%, 0.87);
+    background-color: #fff;
 }
 .sign_up
 {
@@ -107,7 +107,7 @@ a
 }
 .sign_up:hover
 {
-    background-color: #d2d2d3;
+    background-color: #8cce2f;
 }
 .count
 {
