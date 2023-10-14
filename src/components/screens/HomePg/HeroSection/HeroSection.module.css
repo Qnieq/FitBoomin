@@ -37,20 +37,6 @@
     letter-spacing: 0.08px;
     color: #C7C7CC;
 }
-.motivation button
-{
-    background-color: #bcff5e;
-    border: #bcff5e 1px solid;
-    border-radius: 24px;
-    width: 176px;
-    height: 56px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.08px;
-    margin-top: 48px;
-    cursor: pointer;
-}
 .bg
 {
     display: flex;
@@ -141,6 +127,24 @@
     display: flex;
     align-items: flex-end;
     gap: 32px;
+}
+.book
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bcff5e;
+    border: #bcff5e 1px solid;
+    border-radius: 24px;
+    width: 176px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    margin-top: 48px;
+    cursor: pointer;
+    color: #1C1C1E;
 }
 .items
 {

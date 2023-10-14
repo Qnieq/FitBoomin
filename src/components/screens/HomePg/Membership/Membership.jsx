@@ -14,7 +14,7 @@ const Membership = () => {
         getPlans()
     }, [getPlans])
     
-    console.log(plan)
+
     return (
         <div className={styles.membership}>
             <div className={styles.cart}>

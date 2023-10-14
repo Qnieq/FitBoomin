@@ -74,10 +74,3 @@
     width: 20px;
     height: 20px;
 }
-
-@media screen and (max-width: 1000px){
-    .progList
-    {
-        flex-direction: column;
-    }
-}

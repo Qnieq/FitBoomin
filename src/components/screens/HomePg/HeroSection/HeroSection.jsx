@@ -1,5 +1,6 @@
 import styles from "./HeroSection.module.css"
 import ProgItems from "../../../ui/ProgItems/ProgItems";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
     return (
@@ -11,7 +12,7 @@ const HeroSection = () => {
                     just stay fit our world class coaches will guide you every step of <br />
                     the way.
                 </p>
-                <button>Book a Class</button>
+                <Link to={'/membership'} className={styles.book}>Book a Class</Link>
                 <div className={styles.sponsers}>
                     <h5>Supported by:</h5>
                     <div className={styles.brends}>

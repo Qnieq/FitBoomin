@@ -26,7 +26,7 @@ const Review = () => {
 
 
     
-    console.log(count)
+
     function toggleActive(index) {
         changeState({ ...appState, activeObject: appState.objects[index] })
     }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./GetStarted.module.css"
 
 const GetStarted = () => {
@@ -17,7 +18,7 @@ const GetStarted = () => {
                     </div>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button}>Get Started</button>
+                    <Link to={'/membership'} className={styles.button}>Get Started</Link>
                 </div>
             </div>
         </div>

@@ -9,7 +9,6 @@ const rootActions = {
   ...purchaseActions,
 };
 
-console.log(rootActions)
 export const useActions = () => {
   const dispatch = useDispatch();
 
