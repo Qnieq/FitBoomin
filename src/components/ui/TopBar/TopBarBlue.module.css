@@ -69,10 +69,11 @@ a
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.07px;
+    transition: 0.4s;
 }
 .log_in:hover
 {
-    background-color: rgb(2, 67, 165);
+    background-color: #043b8d;
 }
 .sign_up
 {
