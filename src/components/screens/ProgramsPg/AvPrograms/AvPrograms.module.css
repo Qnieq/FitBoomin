@@ -8,7 +8,6 @@
     align-items: center;
     gap: 43px;
     height: 850px;
-    width: 100%;
 }
 .cart
 {
@@ -57,10 +56,3 @@
     letter-spacing: 0.2px;
     text-align: center;
 }
-
-@media screen and ( min-width: 1200px){
-    .programs
-    {
-        width: 100%;
-    }
-}   

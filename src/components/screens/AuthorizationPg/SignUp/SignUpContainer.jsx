@@ -27,8 +27,8 @@ const SignUpContainer = () => {
                         <h3>Welcome to Work<span>out</span></h3>
                         <div className={styles.variants}>
                             <div className={styles.cta}>
-                                <button><img src="/images/google.png" alt="" />Continue with Google</button>
-                                <button><img src="/images/icon-apple.png" alt="" />Continue with Apple</button>
+                                <button><img src="images/google.png" alt="" />Continue with Google</button>
+                                <button><img src="images/icon-apple.png" alt="" />Continue with Apple</button>
                             </div>
                             <div className={styles.login}>
                                 <span></span>

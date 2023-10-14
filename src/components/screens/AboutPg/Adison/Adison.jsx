@@ -25,16 +25,16 @@ const Adison = () => {
                 </div>
             </div>
             <div className={styles.about_me_img}>
-                <img src="/public/images/adison.png" alt="" />
+                <img src="images/adison.png" alt="" />
                 <div className={styles.experience}>
-                    <img src="/images/video-square.png" alt="" />
+                    <img src="images/video-square.png" alt="" />
                     <div className={styles.title}>
                         <h3>120+</h3>
                         <p>Years of experience</p>
                     </div>
                 </div>
                 <div className={styles.experience}>
-                    <img src="/images/video-square.png" alt="" />
+                    <img src="images/video-square.png" alt="" />
                     <div className={styles.title}>
                         <h3>1.400+</h3>
                         <p>Classes taught</p>

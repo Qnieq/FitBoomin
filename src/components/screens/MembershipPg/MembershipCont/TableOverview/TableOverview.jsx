@@ -18,57 +18,57 @@ const TableOverview = () => {
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Access to online classes</th>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Health & fitness guides</th>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Full Warmup guide</th>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Access video Link</th>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Full diet plan</th>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Nutritional support</th>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Full customize plan</th>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>Daily progress check up</th>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                     <tr className={styles.content_tr}>
                         <th scope="row" className={styles.content_name}>All Intermediate package</th>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/close-circle.png" alt="" /></td>
-                        <td className={styles.content}><img src="/public/images/checkmark.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/close-circle.png" alt="" /></td>
+                        <td className={styles.content}><img src="images/checkmark.png" alt="" /></td>
                     </tr>
                 </tbody>
             </table>

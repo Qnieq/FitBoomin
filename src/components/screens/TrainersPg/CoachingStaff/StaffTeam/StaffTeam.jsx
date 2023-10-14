@@ -1,4 +1,4 @@
-import styles from "./Staff.module.css"
+import styles from "./StaffTeam.module.css"
 
 const StaffTeam = () => {
     return (
@@ -6,7 +6,7 @@ const StaffTeam = () => {
             <div className={styles.team_list}>
                 <div className={styles.team_item}>
                     <div className={styles.team_item_img}>
-                        <img src="/public/images/coach1.png" alt="team-1" />
+                        <img src="images/coach1.png" alt="team-1" />
                     </div>
                     <div className={styles.team_item_info}>
                         <div className={styles.team_item_name}>
@@ -15,20 +15,20 @@ const StaffTeam = () => {
                         </div>
                         <div className={styles.team_item_social_media}>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/facebook-black.png" alt="" />
+                                <img src="images/facebook-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/in-black.png" alt="" />
+                                <img src="images/in-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/tweater-black.png" alt="" />
+                                <img src="images/tweater-black.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={styles.team_item}>
                     <div className={styles.team_item_img}>
-                        <img src="/public/images/coach2.png" alt="team-1" />
+                        <img src="images/coach2.png" alt="team-1" />
                     </div>
                     <div className={styles.team_item_info}>
                         <div className={styles.team_item_name}>
@@ -37,20 +37,20 @@ const StaffTeam = () => {
                         </div>
                         <div className={styles.team_item_social_media}>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/facebook-black.png" alt="" />
+                                <img src="images/facebook-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/in-black.png" alt="" />
+                                <img src="images/in-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/tweater-black.png" alt="" />
+                                <img src="images/tweater-black.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={styles.team_item}>
                     <div className={styles.team_item_img}>
-                        <img src="/public/images/coach3.png" alt="team-1" />
+                        <img src="images/coach3.png" alt="team-1" />
                     </div>
                     <div className={styles.team_item_info}>
                         <div className={styles.team_item_name}>
@@ -59,13 +59,13 @@ const StaffTeam = () => {
                         </div>
                         <div className={styles.team_item_social_media}>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/facebook-black.png" alt="" />
+                                <img src="images/facebook-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/in-black.png" alt="" />
+                                <img src="images/in-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/tweater-black.png" alt="" />
+                                <img src="images/tweater-black.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const StaffTeam = () => {
             <div className={styles.team_list}>
                 <div className={styles.team_item}>
                     <div className={styles.team_item_img}>
-                        <img src="/public/images/coach4.png" alt="team-1" />
+                        <img src="images/coach4.png" alt="team-1" />
                     </div>
                     <div className={styles.team_item_info}>
                         <div className={styles.team_item_name}>
@@ -83,20 +83,20 @@ const StaffTeam = () => {
                         </div>
                         <div className={styles.team_item_social_media}>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/facebook-black.png" alt="" />
+                                <img src="images/facebook-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/in-black.png" alt="" />
+                                <img src="images/in-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/tweater-black.png" alt="" />
+                                <img src="images/tweater-black.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={styles.team_item}>
                     <div className={styles.team_item_img}>
-                        <img src="/public/images/coach5.png" alt="team-1" />
+                        <img src="images/coach5.png" alt="team-1" />
                     </div>
                     <div className={styles.team_item_info}>
                         <div className={styles.team_item_name}>
@@ -105,20 +105,20 @@ const StaffTeam = () => {
                         </div>
                         <div className={styles.team_item_social_media}>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/facebook-black.png" alt="" />
+                                <img src="images/facebook-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/in-black.png" alt="" />
+                                <img src="images/in-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/tweater-black.png" alt="" />
+                                <img src="images/tweater-black.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={styles.team_item}>
                     <div className={styles.team_item_img}>
-                        <img src="/public/images/coach6.png" alt="team-1" />
+                        <img src="images/coach6.png" alt="team-1" />
                     </div>
                     <div className={styles.team_item_info}>
                         <div className={styles.team_item_name}>
@@ -127,13 +127,13 @@ const StaffTeam = () => {
                         </div>
                         <div className={styles.team_item_social_media}>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/facebook-black.png" alt="" />
+                                <img src="images/facebook-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/in-black.png" alt="" />
+                                <img src="images/in-black.png" alt="" />
                             </div>
                             <div className={styles.team_item_social_media_list}>
-                                <img src="/public/images/tweater-black.png" alt="" />
+                                <img src="images/tweater-black.png" alt="" />
                             </div>
                         </div>
                     </div>

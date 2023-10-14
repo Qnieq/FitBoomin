@@ -55,7 +55,7 @@ const PaymentDetail = ({ item }) => {
                                         toggleActive(1)
                                     }}></span>
                                 <div className={styles.method}>
-                                    <img src="/images/paypal.png" alt="" />
+                                    <img src="images/paypal.png" alt="" />
                                     <h4>PayPal</h4>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ const PaymentDetail = ({ item }) => {
                                         toggleActive(2)
                                     }}></span>
                                 <div className={styles.method}>
-                                    <img src="/images/apple-pay.png" alt="" />
+                                    <img src="images/apple-pay.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -111,15 +111,15 @@ const PaymentDetail = ({ item }) => {
                     <div className={styles.features}>
                         <h3>What’s Includes:</h3>
                         <div className={styles.feature}>
-                            <img src="/images/checkmark-blue.png" alt="" />
+                            <img src="images/checkmark-blue.png" alt="" />
                             <h5>{item[0][0].features.classes}</h5>
                         </div>
                         <div className={styles.feature}>
-                            <img src="/images/checkmark-blue.png" alt="" />
+                            <img src="images/checkmark-blue.png" alt="" />
                             <h5>{item[0][0].features.pack}</h5>
                         </div>
                         <div className={styles.feature}>
-                            <img src="/images/checkmark-blue.png" alt="" />
+                            <img src="images/checkmark-blue.png" alt="" />
                             <h5>{item[0][0].features.training}</h5>
                         </div>
                     </div>

@@ -3,7 +3,7 @@ const PopUp = () => {
     return (
         <>
             <div className={styles.backgr}>
-                <img src="/public/images/background1.jpg" alt="" />
+                <img src="images/background1.jpg" alt="" />
             </div>
         </>
     );

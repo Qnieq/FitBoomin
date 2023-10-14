@@ -5,7 +5,7 @@ const LogoWhite = () => {
     return (
         <Link to={'/home'}>
             <div className={styles.title}>
-                <img src="/public/images/logo-white.png" alt="fitboomin" className={styles.logo}/>
+                <img src="images/logo-white.png" alt="fitboomin" className={styles.logo}/>
                 <h2 className={styles.nickname}>FitBoo<span className={styles.nickname_min}>min</span></h2>
             </div>
         </Link>

@@ -55,11 +55,11 @@ const Footer = () => {
                     <h6>© 2022 Nguli® Global Inc.</h6>
                 </div>
                 <div className={styles.socialMedia}>
-                    <a href="#"><img src="/images/facebook.png" alt="" /></a>
-                    <a href="#"><img src="/images/in.png" alt="" /></a>
-                    <a href="#"><img src="/images/tweeter.png" alt="" /></a>
-                    <a href="#"><img src="/images/youtube.png" alt="" /></a>
-                    <a href="#"><img src="/images/instagram.png" alt="" /></a>
+                    <a href="#"><img src="images/facebook.png" alt="" /></a>
+                    <a href="#"><img src="images/in.png" alt="" /></a>
+                    <a href="#"><img src="images/tweeter.png" alt="" /></a>
+                    <a href="#"><img src="images/youtube.png" alt="" /></a>
+                    <a href="#"><img src="images/instagram.png" alt="" /></a>
                 </div>
                 <div className={styles.privacy}>
                     <ul className={styles.privacyCart}>

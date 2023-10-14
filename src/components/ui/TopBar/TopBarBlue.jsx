@@ -3,7 +3,7 @@ import LogoWhite from "../Logo/LogoWhite";
 import styles from "./TopBarBlue.module.css"
 
 const TopBarBlue = () => {
-    // const {cart} = useCart()
+
     return (
         <div className={styles.fullBar}>
             <div className={styles.container}>

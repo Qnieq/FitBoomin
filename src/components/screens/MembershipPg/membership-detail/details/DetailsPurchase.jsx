@@ -35,21 +35,21 @@ const DetailsPurchase = ({ item } ) => {
                     </div>
                     <div className={styles.features}>
                         <div className={styles.features_list}>
-                            <img src="/public/images/Black_biceps.png" alt="" />
+                            <img src="images/Black_biceps.png" alt="" />
                             <div className={styles.description}>
                                 <h5>01</h5>
                                 <h4>Power Up</h4>
                             </div>
                         </div>
                         <div className={styles.features_list}>
-                            <img src="/public/images/sport-timer-black.png" alt="" />
+                            <img src="images/sport-timer-black.png" alt="" />
                             <div className={styles.description}>
                                 <h5>02</h5>
                                 <h4>Be Flexible</h4>
                             </div>
                         </div>
                         <div className={styles.features_list}>
-                            <img src="/public/images/dumbbell-black.png" alt="" />
+                            <img src="images/dumbbell-black.png" alt="" />
                             <div className={styles.description}>
                                 <h5>03</h5>
                                 <h4>Super Body Toning</h4>
@@ -84,21 +84,6 @@ const DetailsPurchase = ({ item } ) => {
                             Suspendisse feugiat scelerisque et, viverra urna imperdiet non malesuada.
                         </p>
                     </div>
-                    {/* <div className={styles.features_purchase}>
-                        <h3>What’s Includes:</h3>
-                        <div className={styles.feature}>
-                            <img src="/images/checkmark.png" alt="" />
-                            <h5>{}</h5>
-                        </div>
-                        <div className={styles.feature}>
-                            <img src="/images/checkmark.png" alt="" />
-                            <h5>{}</h5>
-                        </div>
-                        <div className={styles.feature}>
-                            <img src="/images/checkmark.png" alt="" />
-                            <h5>{}</h5>
-                        </div>
-                    </div> */}
                     <div className={styles.field}>
                         <form>
                             <label>
@@ -116,18 +101,6 @@ const DetailsPurchase = ({ item } ) => {
                     </h5>
                     <div className={styles.cta}>
                         <Link onClick={() => togglePurchaseNow([item, Number(t)])} to={`/membership/payment/${item.id}`} className={styles.purchase} >Purchase Now</Link>
-                        {/* <button onClick={() => {
-                            toggleCart([item, Number(t)]);
-                            toggleTotalCart([{id: item.id, price: item.price}, Number(t)]); 
-                            toggleActive(1)}} className={toggleActiveStyles(1)}>
-                                Add to Cart
-                        </button>
-                        <button onClick={() => {
-                            toggleCart([item, Number(t)]); 
-                            toggleTotalCart([{id: item.id, price: item.price}, Number(t)]);
-                            toggleActive(2)}} className={toggleActiveStyles(2)}>
-                                Remove form Cart
-                        </button> */}
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const FeaturedJob = () => {
                     <div className={styles.value}>
                         <div className={styles.card_list}>
                             <div className={styles.logo}>
-                                <img src="/public/images/Black_biceps.png" alt="" />
+                                <img src="images/Black_biceps.png" alt="" />
                                 <h5>Commitment</h5>
                             </div>
                             <p>
@@ -24,12 +24,12 @@ const FeaturedJob = () => {
                                 adipisci ullam magnam vel aut nihil debitis?
                             </p>
                         </div>
-                        <img src="/public/images/about-first.png" alt="" className={styles.mainImg}/>
+                        <img src="images/about-first.png" alt="" className={styles.mainImg}/>
                     </div>
                     <div className={styles.value}>
                         <div className={styles.card_list}>
                             <div className={styles.logo}>
-                                <img src="/public/images/black-health.png" alt="" />
+                                <img src="images/black-health.png" alt="" />
                                 <h5>Motivation</h5>
                             </div>
                             <p>
@@ -38,12 +38,12 @@ const FeaturedJob = () => {
                                 adipisci ullam magnam vel aut nihil debitis?
                             </p>
                         </div>
-                        <img src="/public/images/about-second.png" alt="" className={styles.mainImg}/>
+                        <img src="images/about-second.png" alt="" className={styles.mainImg}/>
                     </div>
                     <div className={styles.value}>
                         <div className={styles.card_list}>
                             <div className={styles.logo}>
-                                <img src="/public/images/star-black.png" alt="" />
+                                <img src="images/star-black.png" alt="" />
                                 <h5>Passion</h5>
                             </div>
                             <p>
@@ -52,7 +52,7 @@ const FeaturedJob = () => {
                                 adipisci ullam magnam vel aut nihil debitis?
                             </p>
                         </div>
-                        <img src="/public/images/about-third.png" alt="" className={styles.mainImg}/>
+                        <img src="images/about-third.png" alt="" className={styles.mainImg}/>
                     </div>
                 </div>
             </div>

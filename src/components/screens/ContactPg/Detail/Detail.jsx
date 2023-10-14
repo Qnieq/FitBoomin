@@ -27,19 +27,19 @@ const Detail = () => {
                         <div className={styles.contact}>
                             <div className={styles.contact_list}>
                                 <div className={styles.notification}>
-                                    <img src="/public/images/phone.png" alt="phone" />
+                                    <img src="images/phone.png" alt="phone" />
                                 </div>
                                 <h4>+1 234 5678 910</h4>
                             </div>
                             <div className={styles.contact_list}>
                                 <div className={styles.notification}>
-                                    <img src="/public/images/sms.png" alt="sms" />
+                                    <img src="images/sms.png" alt="sms" />
                                 </div>
                                 <h4>hello@nguli.com</h4>
                             </div>
                             <div className={styles.contact_list}>
                                 <div className={styles.notification}>
-                                    <img src="/public/images/point.png" alt="point" />
+                                    <img src="images/point.png" alt="point" />
                                 </div>
                                 <h4>105 Street, Seatle-US</h4>
                             </div>

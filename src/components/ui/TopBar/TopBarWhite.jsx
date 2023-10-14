@@ -3,7 +3,7 @@ import styles from "./TopBarWhite.module.css"
 import LogoBlue from "../Logo/LogoBlue";
 
 const TopBarWhite = () => {
-    // const {cart} = useCart()
+
     return (
         <div className={styles.fullBar}>
             <div className={styles.container}>
@@ -38,7 +38,6 @@ const TopBarWhite = () => {
                     </ul>
                 </div>
                 <div className={styles.buy_menu}>
-                    {/* <Link to="/membership/cart"><img src="/public/images/buy-card-black.png" alt="buycart" className={styles.buy}/><span className={styles.count}>{cart.length}</span></Link> */}
                     <Link to={'/sign-in'} className={styles.log_in}>Log In</Link>
                     <Link to={'/sign-up'} className={styles.sign_up}>Sign Up</Link>
                 </div>

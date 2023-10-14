@@ -5,7 +5,7 @@ const ProgItems = () => {
         <div className={styles.progList}>
                     <div className={styles.progItem}>
                         <div className={styles.progItem_icon}>
-                            <img src="/public/images/Black_biceps.png" alt="" />
+                            <img src="images/Black_biceps.png" alt="" />
                         </div>
                         <div className={styles.progItem_text}>
                             <h5>Personal Training</h5>
@@ -16,7 +16,7 @@ const ProgItems = () => {
                     </div>
                     <div className={styles.progItem}>
                         <div className={styles.progItem_icon}>
-                            <img src="/public/images/sport-dumbbell.png" alt="" />
+                            <img src="images/sport-dumbbell.png" alt="" />
                         </div>
                         <div className={styles.progItem_text}>
                             <h5>Workout Programs</h5>
@@ -27,7 +27,7 @@ const ProgItems = () => {
                     </div>
                     <div className={styles.progItem}>
                         <div className={styles.progItem_icon}>
-                            <img src="/public/images/sport-slim-waist.png" alt="" />
+                            <img src="images/sport-slim-waist.png" alt="" />
                         </div>
                         <div className={styles.progItem_text}>
                             <h5>Program & Diet</h5>

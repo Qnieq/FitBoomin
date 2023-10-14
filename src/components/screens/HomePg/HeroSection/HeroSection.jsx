@@ -16,10 +16,10 @@ const HeroSection = () => {
                 <div className={styles.sponsers}>
                     <h5>Supported by:</h5>
                     <div className={styles.brends}>
-                        <img src="/public/images/nike.png" alt="" />
-                        <img src="/public/images/esprit.png" alt="" />
-                        <img src="/public/images/apple-watch.png" alt="" />
-                        <img src="/public/images/new-balance.png" alt="" />
+                        <img src="images/nike.png" alt="" />
+                        <img src="images/esprit.png" alt="" />
+                        <img src="images/apple-watch.png" alt="" />
+                        <img src="images/new-balance.png" alt="" />
                     </div>
                 </div>
                 <div className={styles.items}>
@@ -32,18 +32,18 @@ const HeroSection = () => {
             </div>
             <div className={styles.bg}>
                 <div className={styles.container}>
-                    <img src="/public/images/menHome.png" alt="" className={styles.bodybuilder}/>
+                    <img src="images/menHome.png" alt="" className={styles.bodybuilder}/>
                 </div>
                 <div className={styles.heart_rate}>
                     <div className={styles.rate}>
-                        <img src="/public/images/health.png" alt="" className={styles.biceps}/>
+                        <img src="images/health.png" alt="" className={styles.biceps}/>
                         <h6>Heart Rate</h6>
                         <h5>9281 bpm</h5>
                     </div>
                 </div>
                 <div className={styles.muscle_rate}>
                     <div className={styles.rate}>
-                        <img src="/public/images/biceps.png" alt="" className={styles.biceps}/>
+                        <img src="images/biceps.png" alt="" className={styles.biceps}/>
                         <h6>Muscle Rate</h6>
                         <h5>2,861</h5>
                     </div>

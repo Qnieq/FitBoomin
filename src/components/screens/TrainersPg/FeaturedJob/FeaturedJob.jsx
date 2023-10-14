@@ -16,7 +16,7 @@ const FeaturedJob = () => {
                     <div className={styles.job_list}>
                         <div className={styles.description}>                    
                             <div className={styles.logo}>
-                                <img src="/public/images/Black_biceps.png" alt="" />
+                                <img src="images/Black_biceps.png" alt="" />
                                 <h6>Commitment</h6>
                             </div>
                             <div className={styles.text}>
@@ -31,7 +31,7 @@ const FeaturedJob = () => {
                     <div className={styles.job_list}>
                         <div className={styles.description}>                    
                             <div className={styles.logo}>
-                                <img src="/public/images/logo-white.png" alt="" />
+                                <img src="images/logo-white.png" alt="" />
                                 <h6>Motivation</h6>
                             </div>
                             <div className={styles.text}>
@@ -46,7 +46,7 @@ const FeaturedJob = () => {
                     <div className={styles.job_list}>
                         <div className={styles.description}>                    
                             <div className={styles.logo}>
-                                <img src="/public/images/star-black.png" alt="" />
+                                <img src="images/star-black.png" alt="" />
                                 <h6>Passion</h6>
                             </div>
                             <div className={styles.text}>

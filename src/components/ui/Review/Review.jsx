@@ -52,7 +52,7 @@ const Review = () => {
                 </div>
                 <div className={styles.content}>
                     <div className={styles.notation}>
-                        <img src="/public/images/vuesax-bold-quote-up.png" alt="" />
+                        <img src="images/vuesax-bold-quote-up.png" alt="" />
                     </div>
                     <div className={toggleActiveStyles(1)}>
                         <div className={styles.description}>
@@ -65,7 +65,7 @@ const Review = () => {
                         </div>
                         <div className={styles.user_info}>
                             <div className={styles.user}>
-                                <img src="/public/images/user.png" alt="" />
+                                <img src="images/user.png" alt="" />
                             </div>
                             <div className={styles.user_name}>
                                 <h6>Davis Rosser</h6>
@@ -86,7 +86,7 @@ const Review = () => {
                         </div>
                         <div className={styles.user_info}>
                             <div className={styles.user}>
-                                <img src="/public/images/male.jpg" alt="" />
+                                <img src="images/male.jpg" alt="" />
                             </div>
                             <div className={styles.user_name}>
                                 <h6>Will Burnett</h6>
@@ -107,7 +107,7 @@ const Review = () => {
                         </div>
                         <div className={styles.user_info}>
                             <div className={styles.user}>
-                                <img src="/public/images/famale.jpg" alt="" />
+                                <img src="images/famale.jpg" alt="" />
                             </div>
                             <div className={styles.user_name}>
                                 <h6>Jean Graves</h6>
@@ -120,15 +120,15 @@ const Review = () => {
                 </div>
                 <div className={styles.action}>
                     <div className={styles.left}>
-                        <img src="/public/images/arrow-left-slider.png" alt="" onClick={() => {setCount(count-1), toggleActive(count)}}/>
+                        <img src="images/arrow-left-slider.png" alt="" onClick={() => {setCount(count-1), toggleActive(count)}}/>
                     </div>
                     <div className={styles.slider}>
                         <div></div>
-                        <img src="/public/images/slider-ecllips.png" alt="" />
-                        <img src="/public/images/slider-ecllips.png" alt="" />
+                        <img src="images/slider-ecllips.png" alt="" />
+                        <img src="images/slider-ecllips.png" alt="" />
                     </div>
                     <div className={styles.right}>
-                        <img src="/public/images/arrow-right-slider.png" alt="" onClick={() => {setCount(count+1), toggleActive(count)}} />
+                        <img src="images/arrow-right-slider.png" alt="" onClick={() => {setCount(count+1), toggleActive(count)}} />
                     </div>
                 </div>
             </div>
