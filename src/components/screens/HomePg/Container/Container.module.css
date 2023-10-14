@@ -104,6 +104,11 @@
     line-height: 24px; 
     letter-spacing: 0.08px;
     cursor: pointer;
+    transition: 0.4s;
+}
+.button:hover
+{
+    background-color: #8cce2f
 }
 .content_second
 {
