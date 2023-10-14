@@ -1,4 +1,4 @@
-import styles from "./Staff.module.css"
+import styles from "./StaffTeam.module.css"
 
 const StaffTeam = () => {
     return (
