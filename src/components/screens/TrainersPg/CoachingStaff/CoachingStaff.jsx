@@ -1,5 +1,5 @@
 import styles from "./CoachingStaff.module.css"
-import Staff from "./staff/Staff";
+import StaffTeam from "./StaffTeam/StaffTeam";
 
 const CoachingStaff = () => {
     return (
@@ -13,7 +13,7 @@ const CoachingStaff = () => {
                         Click our photos to read more.
                     </p>
                 </div>
-                <Staff />
+                <StaffTeam />
             </div>
             
         </div>

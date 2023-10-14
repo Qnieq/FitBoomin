@@ -1,6 +1,6 @@
 import styles from "./Staff.module.css"
 
-const Staff = () => {
+const StaffTeam = () => {
     return (
         <div className={styles.team_list_container}>
             <div className={styles.team_list}>
@@ -143,4 +143,4 @@ const Staff = () => {
     );
 }
 
-export default Staff;
+export default StaffTeam;
