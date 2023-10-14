@@ -108,6 +108,11 @@
     background: #BCFF5E;
     border: none;
     cursor: pointer;
+    transition: 0.4s;
+}
+.NewsletterForm button:hover
+{
+    background-color: #8cce2f
 }
 .line
 {
