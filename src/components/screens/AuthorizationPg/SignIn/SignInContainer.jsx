@@ -62,7 +62,7 @@ const SignInContainer = () => {
                                         </IconButton>
                                 </InputAdornment>
                             </label>
-                            <Link to={'/home'}><button>Login</button></Link>
+                            <Link to={'/FitBoomin/'}><button>Login</button></Link>
                         </form>
                         <div className={styles.already}>
                             <Link to={'/sign-in/forgot-password'}>Forgot Password?</Link>
