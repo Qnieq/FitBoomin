@@ -1,22 +1,24 @@
-.fullBar
+.cssContainer
 {
-    height: 86px;
     width: 100%;
+    height: 86px;
     background: #064bb4;
     display: flex;
     justify-content: center;
+}
+.fullBar
+{
+    background: #064bb4;
+    display: flex;
     align-items: center;
-    position: fixed;
-    z-index: 10;
-    
+
 }
 .container
 {
-    width: calc(100% - 960px);
     display: flex;
-    justify-content: space-between;
+    gap: calc(5px + (350 - 5) * ((100vw - 320px) / (2560 - 320)));
     user-select: none;
-    min-width: 60%;
+    
 }
 .menu
 {
@@ -112,9 +114,17 @@ a
     letter-spacing: 0.2px;
     transform: translateX(-10px);
 }
-@media screen and (max-width: 1000px) {
-    .container
+@media (max-width: 1440px)
+{
+    .menu
     {
-        width: calc(50% - 240px);
+        display: none;
+    }
+}
+@media (max-width: 2560px)
+{
+    .cssContainer
+    {
+        height: calc(350px + (86 - 350) * ((100vw - 320px) / (2560 - 320)));
     }
 }
