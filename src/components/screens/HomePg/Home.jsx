@@ -5,12 +5,13 @@ import Review from "../../ui/Review/Review";
 import GetStarted from "../../ui/GetStarted/GetStarted";
 import Footer from "../../ui/Footer/Footer";
 import TopBarBlue from "../../ui/TopBar/TopBarBlue";
+import styles from "./Home.module.css"
 
 
 
 const Home = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <TopBarBlue />
             <HeroSection />
             <Container />
