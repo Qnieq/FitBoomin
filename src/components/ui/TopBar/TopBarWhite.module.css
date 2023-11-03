@@ -11,7 +11,7 @@
 }
 .container
 {
-    width: calc(100% - 960px);
+    /* width: calc(320px + (1600 - 320) * ((100vw - 320px) / (1600 - 320))); */
     display: flex;
     justify-content: space-between;
     user-select: none;
