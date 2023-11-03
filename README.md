@@ -10,4 +10,4 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Так же представленна форма регистрации и логина. Навигация по сайту работает без перезагрузок.
 
-# [Ссылка на проект] (https://vk.cc/cs7HnN)
+# [Ссылка на проект](https://vk.cc/cs7HnN)
