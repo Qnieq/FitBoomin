@@ -6,12 +6,14 @@ const HeroSection = () => {
     return (
         <div className={styles.HeroSection}>
             <div className={styles.motivation}>
-                <h1 className={styles.motivation_words}>For Your <span>Health</span><br /> and <span>Fitness Goals</span><br /> in No Time</h1>
-                <p>
-                    It doesn’t matter if your goal is to get stronger, burn fat, or to <br /> 
-                    just stay fit our world class coaches will guide you every step of <br />
-                    the way.
-                </p>
+                <div className={styles.title}>
+                    <h1 className={styles.motivation_words}>For Your <span>Health</span><br /> and <span>Fitness Goals</span><br /> in No Time</h1>
+                    <p>
+                        It doesn’t matter if your goal is to get stronger, burn fat, or to <br /> 
+                        just stay fit our world class coaches will guide you every step of <br />
+                        the way.
+                    </p>
+                </div>
                 <Link to={'/membership'} className={styles.book}>Book a Class</Link>
                 <div className={styles.sponsers}>
                     <h5>Supported by:</h5>

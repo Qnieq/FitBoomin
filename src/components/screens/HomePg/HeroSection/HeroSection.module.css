@@ -4,17 +4,17 @@
     width: 100%;
     height: 1286px;
     display: flex;
+    justify-content: center;
 }
 .motivation
 {
-    margin-left: 480px;
     margin-top: 148px;
     color: #fff;
     z-index: 2;
 }
 .motivation_words
 {
-    font-size: 72px;
+    font-size: calc(30px + (72 - 30) * ((100vw - 320px) / (2560 - 320)));
     font-style: normal;
     font-weight: 300;
     line-height: 80px;
@@ -22,7 +22,7 @@
 }
 .motivation_words span
 {
-    font-size: 72px;
+    font-size: calc(30px + (72 - 30) * ((100vw - 320px) / (2560 - 320)));
     font-style: normal;
     font-weight: 600;
     line-height: 80px;
@@ -31,7 +31,7 @@
 .motivation p
 {
     margin-top: 16px;
-    font-size: 16px;
+    font-size: calc(14px + (14 - 16) * ((100vw - 320px) / (2560 - 320)));
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -54,8 +54,7 @@
     display: flex;
     width: 824px;
     height: 949px;
-    position: absolute;
-    transform: translateX(-33px);
+    transform: translateX(400px);
 }
 .bodybuilder
 {
@@ -79,7 +78,7 @@
     width: 103px;
     height: 110px;  
     display: inline-flex;
-    padding: 12px;
+    padding: calc(5px + (12 - 5) * ((100vw - 320px) / (2560 - 320)));;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
@@ -154,7 +153,6 @@
 .items
 {
     display: flex;
-    width: calc(100% - 960px);
     margin-top: 120px;
     position: absolute;
 }
@@ -181,4 +179,58 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.08px;
+}
+@media (max-width: 1439px)
+{
+    .bg
+    {
+        transform: translateX(calc(0px + (200 - 620) * ((100vw - 320px) / (2560 - 320))));
+    }
+    .progText
+    {
+        display: none;
+    }
+}
+@media (max-width: 1280px)
+{
+    .bg
+    {
+        display: flex;
+        transform: translateX(calc(0px + (200 - 620) * ((100vw - 320px) / (2560 - 320))));
+    }
+}
+@media (max-width: 1279px)
+{
+    .bg
+    {
+        display: none;
+    }
+}
+@media (max-width: 2560px)
+{
+    .HeroSection
+    {
+        height: calc(1650px + (1268 - 1650) * ((100vw - 320px) / (2560 - 320)));
+    }
+}
+@media (min-width: 2560px)
+{
+    .container
+    {
+        transform: translateX(calc(400px + (400 - 470) * ((100vw - 320px) / (2560 - 320))));
+    }
+}
+@media (max-width: 1440px)
+{
+    .HeroSection
+    {
+        justify-content: flex-start;
+        padding-left: 80px;
+    }
+    .bodybuilder
+    {
+        height: 800px;
+        width: 700px;
+        transform: translate(70px, 70px);
+    }
 }

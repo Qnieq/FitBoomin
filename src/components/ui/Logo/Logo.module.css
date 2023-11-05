@@ -29,16 +29,12 @@
 }
 @media (max-width: 2560px)
 {
-    .logo
-    {
-        width: calc(240px + (40 - 240) * ((100vw - 320px) / (2560 - 320)));
-    }
     .nickname
     {
-        font-size: calc(80px + (24 - 80) * ((100vw - 320px) / (2560 - 320)));
+        font-size: calc(30px + (24 - 30) * ((100vw - 320px) / (2560 - 320)));
     }
     .nickname_min
     {
-        font-size: calc(80px + (24 - 80) * ((100vw - 320px) / (2560 - 320)));
+        font-size: calc(30px + (24 - 30) * ((100vw - 320px) / (2560 - 320)));
     }
 }

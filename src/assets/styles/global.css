@@ -10,6 +10,11 @@
     -webkit-user-select: none;
     text-decoration: none;
 }
+body 
+{
+    width: 100%;
+    display: table;
+}
 .details.active
 {
     display: flex;
