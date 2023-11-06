@@ -190,6 +190,10 @@
     {
         display: none;
     }
+    .HeroSection
+    {
+        padding-left: calc(50px + (90 - 50) * ((100vw - 320px) / (2560 - 320)));
+    }
 }
 @media (max-width: 1280px)
 {
@@ -232,5 +236,20 @@
         height: 800px;
         width: 700px;
         transform: translate(70px, 70px);
+    }
+}
+@media (max-width: 1580px)
+{
+    .HeroSection
+    {
+        justify-content: flex-start;
+        padding-left: calc(80px + (100 - 80) * ((100vw - 1440px) / (2560 - 320)));
+    }
+}
+@media (max-width: 755px)
+{
+    .HeroSection
+    {
+        height: 2000px;
     }
 }
