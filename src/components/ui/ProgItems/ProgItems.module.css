@@ -76,7 +76,7 @@
     width: 20px;
     height: 20px;
 }
-@media (max-width: 1108px)
+@media (max-width: 1101px)
 {
     .progItem:nth-child(2)
     {
@@ -91,7 +91,7 @@
         border-radius: 0px 0px 20px 20px
     }
 }
-@media (max-width: 755px)
+@media (max-width: 748px)
 {
     .progItem:nth-child(2)
     {
@@ -100,5 +100,12 @@
     .progItem:nth-child(1)
     {
         border-radius: 20px 20px 0px 0px
+    }
+}
+@media (max-width: 520px)
+{
+    .progItem
+    {
+        width: calc(200px + (303 - 200) * ((100vw - 320px) / (520 - 320)));;
     }
 }

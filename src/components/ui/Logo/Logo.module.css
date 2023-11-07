@@ -27,7 +27,7 @@
     font-size: 24px;
     letter-spacing: 1.3px;
 }
-@media (max-width: 2560px)
+/* @media (max-width: 2560px)
 {
     .nickname
     {
@@ -37,4 +37,4 @@
     {
         font-size: calc(30px + (24 - 30) * ((100vw - 320px) / (2560 - 320)));
     }
-}
+} */

@@ -51,6 +51,13 @@ a
     font-size: 16px;
     display: flex;
 }
+.auth
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
 .buy
 {
     width: 32px;
@@ -122,7 +129,6 @@ a
 }
 .menuIconButton
 {
-    transform: translateX(130px);
     width: 40px;
     height: 40px;
     z-index: 2;
@@ -136,10 +142,12 @@ a
 .menu_mob
 {
     display: flex;
-    transform: translateY(137px);
+    position: absolute;
+    transform: translate(-160px , 180px);
     background: #064bb4;
     border: 1px solid #bcff5e;
     border-radius: 20px;
+    z-index: 5;
 }
 .menu_list_mob
 {
@@ -149,6 +157,21 @@ a
     list-style: none;
     padding: 20px;
 }
+@media (max-width: 1580px)
+{
+    .cssContainer
+    {
+        justify-content: flex-start;
+        padding-left: calc(80px + (500 - 80) * ((100vw - 1440px) / (1580 - 320)));
+    }
+}
+@media (min-width: 1440px)
+{
+    .navBarMob
+    {
+        display: none;
+    }
+}
 @media (max-width: 1439px)
 {
     .menu
@@ -157,46 +180,43 @@ a
     }
     .container
     {
-        gap: calc(100px + (600 - 100) * ((100vw - 320px) / (1439 - 320)));
+        gap: calc(200px + (650 - 200) * ((100vw - 320px) / (1439 - 320)));
+        padding-left: calc(20px + (40 - 20) * ((100vw - 320px) / (1439 - 320)));
     }
 }
-@media (max-width: 1439px)
+@media (max-width: 960px)
 {
-    .container
-    {
-        padding-left: calc(40px + (0 - 40) * ((100vw - 320px) / (2560 - 320)));
-    }
-}
-@media (max-width: 2560px)
-{
-    .cssContainer
-    {
-        height: calc(120px + (86 - 180) * ((100vw - 320px) / (2560 - 320)));
-    }
-}
-@media (max-width: 1580px)
-{
-    .cssContainer
-    {
-        justify-content: flex-start;
-        padding-left: calc(80px + (500 - 80) * ((100vw - 1440px) / (2560 - 320)));
-    }
-}
-@media (max-width: 860px)
-{
-    .buy_menu
+    .auth
     {
         display: none;
     }
     .container
     {
-        gap: calc(300px + (600 - 300) * ((100vw - 320px) / (2560 - 320)));
+        gap: calc(300px + (600 - 300) * ((100vw - 320px) / (960 - 320)));
     }
 }
 @media (max-width: 805px)
 {
     .container
     {
-        gap: 300px;
+        gap: calc(20px + (500 - 20) * ((100vw - 320px) / (805 - 320)));
+    }
+}
+@media (max-width: 700px)
+{
+    .container
+    {
+        gap: calc(20px + (400 - 20) * ((100vw - 320px) / (700 - 320)));
+    }
+}
+@media (max-width: 600px)
+{
+    .container
+    {
+        gap: calc(50px + (300 - 50) * ((100vw - 320px) / (600 - 320)));
+    }
+    .menu_mob
+    {
+        transform: translate(-155px , 180px);
     }
 }

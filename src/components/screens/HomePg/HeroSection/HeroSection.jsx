@@ -9,8 +9,8 @@ const HeroSection = () => {
                 <div className={styles.title}>
                     <h1 className={styles.motivation_words}>For Your <span>Health</span><br /> and <span>Fitness Goals</span><br /> in No Time</h1>
                     <p>
-                        It doesn’t matter if your goal is to get stronger, burn fat, or to <br /> 
-                        just stay fit our world class coaches will guide you every step of <br />
+                        It doesn’t matter if your goal is to get stronger, burn fat, or to 
+                        just stay fit our world class coaches will guide you every step of 
                         the way.
                     </p>
                 </div>

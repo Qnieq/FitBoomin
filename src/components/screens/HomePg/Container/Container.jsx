@@ -33,9 +33,7 @@ const Container = () => {
                             <Link to={'/membership'} className={styles.button}>Join Now</Link>
                         </div>
                     </div>
-                    <div className={styles.card_image}>
-                        <img src="images/man1.png" alt="" />
-                    </div>
+                    <img src="images/man1.png" alt="" className={styles.card_image}/>
                 </div>
                 <div className={styles.content_second}>
                     <div className={styles.card_list}>

@@ -12,6 +12,10 @@
     color: #fff;
     z-index: 2;
 }
+.title
+{
+    width: 616px;
+}
 .motivation_words
 {
     font-size: calc(30px + (72 - 30) * ((100vw - 320px) / (2560 - 320)));
@@ -28,10 +32,11 @@
     line-height: 80px;
     letter-spacing: 0.36px;
 }
-.motivation p
+.title p
 {
+    width: 462px;
     margin-top: 16px;
-    font-size: calc(14px + (14 - 16) * ((100vw - 320px) / (2560 - 320)));
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -123,9 +128,14 @@
 }
 .brends
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 62px 114px 150px 68px;
     align-items: flex-end;
     gap: 32px;
+}
+.brends img
+{
+    width: auto;
 }
 .book
 {
@@ -180,6 +190,50 @@
     line-height: 24px;
     letter-spacing: 0.08px;
 }
+@media (min-width: 2560px)
+{
+    .container
+    {
+        transform: translateX(calc(400px + (400 - 470) * ((100vw - 320px) / (2560 - 320))));
+    }
+}
+@media (max-width: 2560px)
+{
+    .HeroSection
+    {
+        height: calc(1650px + (1268 - 1650) * ((100vw - 320px) / (2560 - 320)));
+        padding-left: calc(0px + (40 - 0) * ((100vw - 320px) / (2560 - 320)));
+    }
+}
+@media (max-width: 1700px)
+{
+    .HeroSection
+    {
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 1580px)
+{
+    .HeroSection
+    {
+        justify-content: flex-start;
+        padding-left: calc(80px + (100 - 80) * ((100vw - 1440px) / (2560 - 320)));
+    }
+}
+@media (max-width: 1440px)
+{
+    .HeroSection
+    {
+        justify-content: flex-start;
+        padding-left: 80px;
+    }
+    .bodybuilder
+    {
+        height: 800px;
+        width: 700px;
+        transform: translate(70px, 70px);
+    }
+}
 @media (max-width: 1439px)
 {
     .bg
@@ -193,6 +247,11 @@
     .HeroSection
     {
         padding-left: calc(50px + (90 - 50) * ((100vw - 320px) / (2560 - 320)));
+    }
+    .book
+    {
+        width: calc(120px + (176 - 120) * ((100vw - 320px) / (1439 - 320)));
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1439 - 320)));
     }
 }
 @media (max-width: 1280px)
@@ -210,46 +269,36 @@
         display: none;
     }
 }
-@media (max-width: 2560px)
-{
-    .HeroSection
-    {
-        height: calc(1650px + (1268 - 1650) * ((100vw - 320px) / (2560 - 320)));
-    }
-}
-@media (min-width: 2560px)
-{
-    .container
-    {
-        transform: translateX(calc(400px + (400 - 470) * ((100vw - 320px) / (2560 - 320))));
-    }
-}
-@media (max-width: 1440px)
-{
-    .HeroSection
-    {
-        justify-content: flex-start;
-        padding-left: 80px;
-    }
-    .bodybuilder
-    {
-        height: 800px;
-        width: 700px;
-        transform: translate(70px, 70px);
-    }
-}
-@media (max-width: 1580px)
-{
-    .HeroSection
-    {
-        justify-content: flex-start;
-        padding-left: calc(80px + (100 - 80) * ((100vw - 1440px) / (2560 - 320)));
-    }
-}
-@media (max-width: 755px)
+@media (max-width: 748px)
 {
     .HeroSection
     {
         height: 2000px;
+        padding-left: calc(40px + (300 - 40) * ((100vw - 320px) / (748 - 320)));
+    }
+    .brends
+    {
+        grid-template-columns: 62px 114px 150px ;
+    }
+}
+@media (max-width: 670px)
+{
+    .title p
+    {
+        width: calc(180px + (462 - 180) * ((100vw - 320px) / (670 - 320)));
+    }
+}
+@media (max-width: 520px)
+{
+    .brends
+    {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media (max-width: 380px)
+{
+    .brends
+    {
+        grid-template-columns: 1fr ;
     }
 }
