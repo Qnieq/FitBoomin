@@ -80,6 +80,12 @@
     line-height: 22px;
     letter-spacing: 0.07px;
 }
+.text
+{
+    overflow: auto;
+    width: 642px;
+    height: 192px;
+}
 .text p
 {
     font-size: 24px;
@@ -146,4 +152,61 @@
     border-radius: 8px;
     width: 16px;
     height: 8px;
+}
+@media (max-width: 1700px)
+{
+    .review
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: calc(20px + (1000 - 20) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .comments
+    {
+        gap: calc(80px + (43 - 80) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .content
+    {
+        width: calc(300px + (680 - 300) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .aplication
+    {
+        width: calc(200px + (318 - 200) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .aplication h2
+    {
+        font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .text
+    {
+        width: calc(250px + (642 - 250) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .text p
+    {
+        font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .notation img
+    {
+        width: calc(20px + (56 - 20) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .user
+    {
+        width: calc(45px + (56 - 45) * ((100vw - 320px) / (1700 - 320)));
+        height: calc(45px + (56 - 45) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .user_name h6
+    {
+        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .chips
+    {
+        padding-top: calc(6px + (8 - 6) * ((100vw - 320px) / (1700 - 320)));
+        padding-bottom: calc(6px + (8 - 6) * ((100vw - 320px) / (1700 - 320)));
+        padding-left: calc(12px + (16 - 12) * ((100vw - 320px) / (1700 - 320)));
+        padding-right: calc(12px + (16 - 12) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .chips h6
+    {
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1700 - 320)));
+    }
 }

@@ -2,7 +2,7 @@
 {
     background: #F9F9FB; 
     display: flex;
-    padding: 120px 200px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -61,4 +61,76 @@
     line-height: 48px;
     letter-spacing: 0.2px;
     text-align: center;
+}
+@media (max-width: 1700px)
+{
+    .membership
+    {
+        align-items: flex-start;
+    }
+    .cart
+    {
+        padding-left: calc(0px + (180 - 0) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .plan
+    {
+        gap: calc(10px + (40 - 10) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .aplication
+    {
+        width: calc(200px + (700 - 200) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .aplication h2
+    {
+        font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .chips
+    {
+        padding-top: calc(6px + (8 - 6) * ((100vw - 320px) / (1700 - 320)));
+        padding-bottom: calc(6px + (8 - 6) * ((100vw - 320px) / (1700 - 320)));
+        padding-left: calc(12px + (16 - 12) * ((100vw - 320px) / (1700 - 320)));
+        padding-right: calc(12px + (16 - 12) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .chips h6
+    {
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1700 - 320)));
+    }
+}
+@media (max-width: 1379px)
+{
+    .plan
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .membership
+    {
+        height: 1100px;
+    }
+    .cart
+    {
+        padding-left: calc(30px + (300 - 30) * ((100vw - 320px) / (1379 - 320)));
+    }
+}
+@media (max-width: 1101px)
+{
+    .plan
+    {
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding-left: calc(5px + (120 - 5) * ((100vw - 320px) / (1101 - 320)));
+    }
+    .membership
+    {
+        height: 1800px;
+        padding-top: calc(0px + (50 - 0) * ((100vw - 320px) / (1101 - 320)));
+    }
+    .cart
+    {
+        padding-left: calc(10px + (180 - 10) * ((100vw - 320px) / (1101 - 320)));
+    }
+    .title
+    {
+        padding-left: calc(10px + (120 - 10) * ((100vw - 320px) / (1101 - 320)));
+    }
 }

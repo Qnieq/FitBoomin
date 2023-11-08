@@ -1,3 +1,11 @@
+.HeroContainer
+{
+    background: #064bb4;
+    width: 100%;
+    height: 1286px;
+    display: flex;
+    justify-content: center;
+}
 .HeroSection
 {
     background: #064bb4;
@@ -197,14 +205,6 @@
         transform: translateX(calc(400px + (400 - 470) * ((100vw - 320px) / (2560 - 320))));
     }
 }
-@media (max-width: 2560px)
-{
-    .HeroSection
-    {
-        height: calc(1650px + (1268 - 1650) * ((100vw - 320px) / (2560 - 320)));
-        padding-left: calc(0px + (40 - 0) * ((100vw - 320px) / (2560 - 320)));
-    }
-}
 @media (max-width: 1700px)
 {
     .HeroSection
@@ -220,7 +220,7 @@
         padding-left: calc(80px + (100 - 80) * ((100vw - 1440px) / (2560 - 320)));
     }
 }
-@media (max-width: 1440px)
+@media (max-width: 1500px)
 {
     .HeroSection
     {
@@ -233,9 +233,6 @@
         width: 700px;
         transform: translate(70px, 70px);
     }
-}
-@media (max-width: 1439px)
-{
     .bg
     {
         transform: translateX(calc(0px + (200 - 620) * ((100vw - 320px) / (2560 - 320))));
@@ -244,6 +241,9 @@
     {
         display: none;
     }
+}
+@media (max-width: 1439px)
+{
     .HeroSection
     {
         padding-left: calc(50px + (90 - 50) * ((100vw - 320px) / (2560 - 320)));
@@ -268,13 +268,27 @@
     {
         display: none;
     }
+    .motivation
+    {
+        margin-top: 20px;
+    }
 }
-@media (max-width: 748px)
+@media (max-width: 1124px)
 {
+    .HeroContainer
+    {
+        height: 1400px;
+    }
+}
+@media (max-width: 767px)
+{
+    .HeroContainer
+    {
+        height: 1700px;
+    }
     .HeroSection
     {
-        height: 2000px;
-        padding-left: calc(40px + (300 - 40) * ((100vw - 320px) / (748 - 320)));
+        padding-left: calc(20px + (200 - 20) * ((100vw - 320px) / (748 - 320)));
     }
     .brends
     {
@@ -283,6 +297,10 @@
 }
 @media (max-width: 670px)
 {
+    .HeroContainer
+    {
+        height: calc(1900px + (1700 - 1900) * ((100vw - 320px) / (670 - 320)));
+    }
     .title p
     {
         width: calc(180px + (462 - 180) * ((100vw - 320px) / (670 - 320)));

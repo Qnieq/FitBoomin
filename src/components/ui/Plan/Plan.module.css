@@ -112,15 +112,63 @@
 {
     background-color: #8cce2f
 }
-.plan_list.plan_list:nth-child(2)
+.plan_list:nth-child(2)
 {
     background: #064BB4;
 }
-.plan_list.plan_list:nth-child(2) h5
+.plan_list:nth-child(2) h5
 {
     color: #FFF;
 }
-.plan_list.plan_list:nth-child(2) h6
+.plan_list:nth-child(2) h6
 {
     color: #FFF;
+}
+@media (max-width: 1700px)
+{
+    .plan_list
+    {
+        width: calc(100px + (320 - 100) * ((100vw - 320px) / (1700 - 320)));
+        padding-top: calc(20px + (40 - 20) * ((100vw - 320px) / (1700 - 320)));
+        padding-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .plan_item_price h5
+    {
+        font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .plan_item_price h5 span
+    {
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .plan_item_price h6
+    {
+        font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .feature h5
+    {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1700 - 320)));
+    }
+    .purchase
+    {
+        padding: calc(8px + (12 - 8) * ((100vw - 320px) / (1700 - 320)));
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1700 - 320)));
+    }
+}
+@media (max-width: 1379px)
+{
+    .plan_list:nth-child(3)
+    {
+        transform: translateX(180px);
+    }
+}
+@media (max-width: 1101px)
+{
+    .plan_list:nth-child(3)
+    {
+        transform: translateX(0);
+    }
+    .plan_list
+    {
+        width: calc(200px + (320 - 200) * ((100vw - 320px) / (1101 - 320)));
+    }
 }

@@ -37,36 +37,38 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className={styles.news}>
-                    <div className={styles.news_title}>
-                        <h5>Newsletter</h5>
-                    </div>
                     <form className={styles.NewsletterForm}>
+                        <label>Newsletter</label>
                         <input type="text" placeholder="Your email here" />
                         <button>Send</button>
                     </form>  
                 </div>
             </div>
-            <div className={styles.line}></div>
             <div className={styles.copyright}>
-                <div className={styles.inc}>
-                    <h6>© 2022 Nguli® Global Inc.</h6>
+                <div className={styles.line}>
+                    <span></span>
                 </div>
-                <div className={styles.socialMedia}>
-                    <a href="#"><img src="images/facebook.png" alt="" /></a>
-                    <a href="#"><img src="images/in.png" alt="" /></a>
-                    <a href="#"><img src="images/tweeter.png" alt="" /></a>
-                    <a href="#"><img src="images/youtube.png" alt="" /></a>
-                    <a href="#"><img src="images/instagram.png" alt="" /></a>
-                </div>
-                <div className={styles.privacy}>
-                    <ul className={styles.privacyCart}>
-                        <li>
-                            <a href="#">Terms of Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                    </ul>
+                <div className={styles.incContainer}>
+                    <div className={styles.inc}>
+                        <h6>© 2022 Nguli® Global Inc.</h6>
+                    </div>
+                    <div className={styles.socialMedia}>
+                        <a href="#"><img src="images/facebook.png" alt="" /></a>
+                        <a href="#"><img src="images/in.png" alt="" /></a>
+                        <a href="#"><img src="images/tweeter.png" alt="" /></a>
+                        <a href="#"><img src="images/youtube.png" alt="" /></a>
+                        <a href="#"><img src="images/instagram.png" alt="" /></a>
+                    </div>
+                    <div className={styles.privacy}>
+                        <ul className={styles.privacyCart}>
+                            <li>
+                                <a href="#">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

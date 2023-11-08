@@ -143,7 +143,8 @@ a
 {
     display: flex;
     position: absolute;
-    transform: translate(-160px , 180px);
+    padding: 0 10px;
+    transform: translate(-170px , 190px);
     background: #064bb4;
     border: 1px solid #bcff5e;
     border-radius: 20px;
@@ -152,7 +153,6 @@ a
 .menu_list_mob
 {
     display: grid;
-    
     gap: 20px;
     list-style: none;
     padding: 20px;
@@ -217,6 +217,6 @@ a
     }
     .menu_mob
     {
-        transform: translate(-155px , 180px);
+        transform: translate(-170px , 190px);
     }
 }
