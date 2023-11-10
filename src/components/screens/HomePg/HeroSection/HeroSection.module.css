@@ -175,7 +175,7 @@
     justify-items: center;
     position: absolute;
     z-index: 2;
-    bottom: 0;
+    transform: translateY(900px);
     gap: 64px;
 }
 .progText
@@ -247,7 +247,7 @@
     {
         grid-template-columns: 1fr;
         width: 100%;
-        transform: translateY(170px);
+        transform: translateY(850px);
     }
     .progText
     {
@@ -286,7 +286,7 @@
     }
     .items
     {
-        transform: translateY(300px);
+        transform: translateY(720px);
     }
     .HeroContainer
     {
@@ -301,7 +301,7 @@
     }
     .items
     {
-        transform: translateY(650px);
+        transform: translateY(770px);
     }
     .brends
     {
@@ -324,7 +324,7 @@
     }
     .items
     {
-        transform: translateY(calc(900px + (650 - 900) * ((100vw - 320px) / (670 - 320))));
+        transform: translateY(calc(920px + (770 - 920) * ((100vw - 320px) / (670 - 320))));
     }
     .HeroContainer
     {
