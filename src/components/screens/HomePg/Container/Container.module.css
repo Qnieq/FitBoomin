@@ -13,7 +13,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
     align-items: center;
 }
 .container
@@ -143,11 +142,6 @@
 }
 @media (max-width: 1700px)
 {
-    .cont
-    {
-        align-items: flex-start;
-        padding-left: calc(10px + (340 - 10) * ((100vw - 320px) / (1700 - 320)));
-    }
     .card_image
     {
         width: calc(80px + (631 - 80) * ((100vw - 320px) / (1700 - 320)));
@@ -184,6 +178,8 @@
     }
     .titleText
     {
+        padding-top: calc(50px + (120 - 50) * ((100vw - 320px) / (1700 - 320)));
+        padding-bottom: calc(0px + (58 - 0) * ((100vw - 320px) / (1700 - 320)));
         width: calc(300px + (582 - 300) * ((100vw - 320px) / (1700 - 320)));
     }
     .titleText h3
@@ -202,7 +198,7 @@
 {
     .cssContainer
     {
-        height: calc(2000px + (2320 - 2000) * ((100vw - 320px) / (768 - 320)));;
+        height: calc(1800px + (2300 - 1800) * ((100vw - 320px) / (1101 - 320)));
         justify-content: flex-start;
     }
     .cont
@@ -212,11 +208,9 @@
     .content
     {
         flex-direction: column;
-        padding-left: calc(25px + (200 - 25) * ((100vw - 320px) / (1101 - 320)));
     }
     .content_second{
         flex-direction: column;
-        padding-left: calc(25px + (200 - 25) * ((100vw - 320px) / (1101 - 320)));
     }
     .card_image
     {
@@ -225,21 +219,5 @@
     .card_list
     {
         width: calc(200px + (631 - 200) * ((100vw - 320px) / (1700 - 320)));
-    }
-}
-@media (max-width: 768px)
-{
-    .cssContainer
-    {
-        height: calc(1950px + (2100 - 1950) * ((100vw - 320px) / (768 - 320)));
-        justify-content: flex-start;
-    }
-    .container
-    {
-        align-items: flex-start;
-    }
-    .titleText
-    {
-        padding-left: calc(25px + (400 - 25) * ((100vw - 320px) / (1101 - 320)));
     }
 }

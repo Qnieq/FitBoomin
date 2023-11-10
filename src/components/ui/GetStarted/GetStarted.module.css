@@ -10,9 +10,9 @@
 }
 .content
 {
-    display: flex;
-    width: 1600px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end;
     align-items: center;
 }
 .titleContainer
@@ -46,6 +46,12 @@
     letter-spacing: 0.08px;
     opacity: 0.64;
 }
+.buttonContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 .button
 {
     background: #BCFF5E;
@@ -70,13 +76,10 @@
 }
 @media (max-width: 2560px)
 {
-    .content
-    {
-        width: calc(200px + (1600 - 200) * ((100vw - 320px) / (2560 - 320)));
-    }
+
     .titleContainer
     {
-        width: calc(300px + (740 - 300) * ((100vw - 320px) / (2560 - 320)));
+        width: calc(280px + (780 - 280) * ((100vw - 320px) / (2560 - 320)));
     }
     .title h1
     {
@@ -84,7 +87,7 @@
     }
     .description
     {
-        width: calc(290px + (627 - 290) * ((100vw - 320px) / (2560 - 320)));
+        width: calc(280px + (627 - 280) * ((100vw - 320px) / (2560 - 320)));
     }
     .description p
     {
@@ -92,7 +95,6 @@
     }
     .button
     {
-        width: calc(70px + (100 - 70) * ((100vw - 320px) / (2560 - 320)));
         font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
         padding-top: calc(10px + (16 - 10) * ((100vw - 320px) / (1700 - 320)));
         padding-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (1700 - 320)));
@@ -100,16 +102,21 @@
         padding-right: calc(30px + (40 - 30) * ((100vw - 320px) / (1700 - 320)));
     }
 }
-@media (max-width: 1140px)
+@media (max-width: 899px)
 {
     .content
     {
-        display: grid;
-        gap: calc(20px + (50 - 20) * ((100vw - 320px) / (1140 - 320)));
-        padding-left: calc(20px + (400 - 20) * ((100vw - 320px) / (1140 - 320)));
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
     }
-    .container
+    .titleContainer
     {
-        justify-content: flex-start;
-    }    
+        align-items: center;
+        text-align: center;
+    }
+    .button
+    {
+        width: 100%;
+    }
 }

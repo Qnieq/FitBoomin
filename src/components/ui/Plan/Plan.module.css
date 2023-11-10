@@ -128,7 +128,7 @@
 {
     .plan_list
     {
-        width: calc(100px + (320 - 100) * ((100vw - 320px) / (1700 - 320)));
+        width: calc(160px + (320 - 160) * ((100vw - 320px) / (1700 - 320)));
         padding-top: calc(20px + (40 - 20) * ((100vw - 320px) / (1700 - 320)));
         padding-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1700 - 320)));
     }
@@ -158,10 +158,10 @@
 {
     .plan_list:nth-child(3)
     {
-        transform: translateX(180px);
+        transform: translateX(calc(120px + (200 - 120) * ((100vw - 320px) / (1379 - 320))));
     }
 }
-@media (max-width: 1101px)
+@media (max-width: 699px)
 {
     .plan_list:nth-child(3)
     {
@@ -169,6 +169,6 @@
     }
     .plan_list
     {
-        width: calc(200px + (320 - 200) * ((100vw - 320px) / (1101 - 320)));
+        width: calc(200px + (225 - 200) * ((100vw - 320px) / (1101 - 320)));
     }
 }

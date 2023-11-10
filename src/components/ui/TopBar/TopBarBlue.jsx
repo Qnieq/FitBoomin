@@ -18,10 +18,6 @@ const TopBarBlue = () => {
         setInProp(!inProp)
     };
 
-    // const handleMouseOpenMenu = (event) => {
-    //     event.preventDefault();
-    // };
-
     return (
         <div className={styles.cssContainer}>
             <div className={styles.fullBar}>

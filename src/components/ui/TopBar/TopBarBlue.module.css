@@ -16,7 +16,7 @@
 .container
 {
     display: flex;
-    gap: calc(50px + (340 - 50) * ((100vw - 320px) / (2560 - 320)));
+    gap: calc(50px + (260 - 50) * ((100vw - 320px) / (2560 - 320)));
     user-select: none;
     align-items: center;
 }
@@ -47,7 +47,6 @@ a
 }
 .buy_menu a
 {
-    /* font-size: calc(20px + (16 - 20) * ((100vw - 320px) / (2560 - 320))); */
     font-size: 16px;
     display: flex;
 }
@@ -106,22 +105,6 @@ a
 {
     background-color: #8cce2f
 }
-.count
-{
-    display: flex;
-    background: #ff4747;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 48px;
-    letter-spacing: 0.2px;
-    transform: translateX(-10px);
-}
 .navBarMob
 {
     display: flex;
@@ -157,14 +140,6 @@ a
     list-style: none;
     padding: 20px;
 }
-@media (max-width: 1580px)
-{
-    .cssContainer
-    {
-        justify-content: flex-start;
-        padding-left: calc(80px + (500 - 80) * ((100vw - 1440px) / (1580 - 320)));
-    }
-}
 @media (min-width: 1440px)
 {
     .navBarMob
@@ -181,7 +156,6 @@ a
     .container
     {
         gap: calc(200px + (650 - 200) * ((100vw - 320px) / (1439 - 320)));
-        padding-left: calc(20px + (40 - 20) * ((100vw - 320px) / (1439 - 320)));
     }
 }
 @media (max-width: 960px)

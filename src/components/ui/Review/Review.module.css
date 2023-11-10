@@ -155,12 +155,6 @@
 }
 @media (max-width: 1700px)
 {
-    .review
-    {
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-left: calc(20px + (1000 - 20) * ((100vw - 320px) / (1700 - 320)));
-    }
     .comments
     {
         gap: calc(80px + (43 - 80) * ((100vw - 320px) / (1700 - 320)));

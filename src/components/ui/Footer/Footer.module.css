@@ -116,10 +116,6 @@
 {
     background-color: #8cce2f
 }
-.line
-{
-    width: 1600px;
-}
 .line span
 {
     border: 1px solid #E9EBED;
@@ -142,7 +138,7 @@
 .incContainer
 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin-top: 25px;
     justify-content: space-between;
@@ -179,6 +175,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    justify-content: flex-end;
 }
 .privacyCart li
 {
@@ -227,6 +224,22 @@
     {
         font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
     }
+    .privacyCart li a
+    {
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
+    }
+    .inc h6
+    {
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
+    }
+    .NewsletterForm button
+    {
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
+        padding-top: calc(10px + (16 - 10) * ((100vw - 320px) / (1700 - 320)));
+        padding-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (1700 - 320)));
+        padding-left: calc(30px + (40 - 30) * ((100vw - 320px) / (1700 - 320)));
+        padding-right: calc(30px + (40 - 30) * ((100vw - 320px) / (1700 - 320)));
+    }
 }
 @media (max-width: 1920px)
 {
@@ -245,41 +258,18 @@
     .menu
     {
         grid-area: c;
-        transform: translateX(calc(200px + (300 - 200) * ((100vw - 320px) / (1920 - 320))));
+        transform: translateX(calc(40px + (330 - 40) * ((100vw - 320px) / (1920 - 320))));
     }
     .NewsletterForm
     {
         grid-area: a;
     }
 }
-@media (max-width: 1439px)
-{
-    .container
-    {
-        align-items: flex-start;
-    }
-    .content
-    {
-        padding-left: calc(30px + (300 - 30) * ((100vw - 320px) / (1439 - 320)));
-    }
-    .copyright
-    {
-        padding-left: calc(30px + (300 - 30) * ((100vw - 320px) / (1439 - 320)));
-    }
-}
 @media (max-width: 1279px)
 {
-    .content
-    {
-        padding-left: calc(10px + (150 - 10) * ((100vw - 320px) / (1279 - 320)));
-    }
     .NewsletterForm input
     {
         width: calc(200px + (247 - 200) * ((100vw - 320px) / (1279 - 320)));
-    }
-    .copyright
-    {
-        padding-left: calc(10px + (150 - 10) * ((100vw - 320px) / (1279 - 320)));
     }
 }
 @media (max-width: 1101px)
@@ -292,9 +282,15 @@
     {
         grid-column: 1;
         width: 100%;
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
+        padding-top: calc(10px + (16 - 10) * ((100vw - 320px) / (1700 - 320)));
+        padding-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (1700 - 320)));
+        padding-left: calc(30px + (40 - 30) * ((100vw - 320px) / (1700 - 320)));
+        padding-right: calc(30px + (40 - 30) * ((100vw - 320px) / (1700 - 320)));
     }
     .incContainer
     {
+        grid-template-columns: 1fr 1fr ;
         grid-template-areas:
         "h a"
         "c .";
@@ -304,10 +300,9 @@
     {
         grid-area: c;
     }
-    .privacyCart
+    .socialMedia
     {
-        width: calc(40px + (490 - 40) * ((100vw - 320px) / (1101 - 320)));
-        justify-content: flex-end;
+        transform: translateX(calc(40px + (250 - 40) * ((100vw - 320px) / (1101 - 320))));
     }
 }
 @media (max-width: 900px)
@@ -330,7 +325,7 @@
         transform: translateX(0);
     }
 }
-@media (max-width: 570px)
+@media (max-width: 699px)
 {
     .container
     {
@@ -348,6 +343,7 @@
     .socialMedia
     {
         grid-area: h;
+        transform: translateX(0);
     }
     .privacyCart
     {

@@ -25,14 +25,14 @@ const HeroSection = () => {
                             <img src="images/new-balance.png" alt="" />
                         </div>
                     </div>
-                    <div className={styles.items}>
+                </div>
+                <div className={styles.items}>
                         <ProgItems />
                         <div className={styles.progText}>
                             <h1>Training Program For You</h1>
                             <p>Starting a fitness routine can be intimidating, but it helps to have an idea of whar to expect before joining any class.</p>
                         </div>
                     </div>
-                </div>
                 <div className={styles.bg}>
                     <div className={styles.container}>
                         <img src="images/menHome.png" alt="" className={styles.bodybuilder}/>

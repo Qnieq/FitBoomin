@@ -2,7 +2,7 @@
 {
     background: #F9F9FB; 
     display: flex;
-    padding: 120px 200px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,7 @@
 .cart
 {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -55,4 +56,22 @@
     line-height: 48px;
     letter-spacing: 0.2px;
     text-align: center;
+}
+@media (max-width: 2560px)
+{
+    .aplication
+    {
+        width: calc(300px + (700 - 300) * ((100vw - 320px) / (2560 - 320)));
+    }
+    .aplication h2
+    {
+        font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (2560 - 320)));
+    }
+}
+@media (max-width: 767px)
+{
+    .programs
+    {
+        height: 1200px;
+    }
 }
