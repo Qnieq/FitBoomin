@@ -10,7 +10,9 @@
 .content
 {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 56px;
 }
@@ -20,12 +22,12 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    width: 520px;
+    width: clamp(200px, 85vw, 520px);
 }
 .title h6
 {
     color: #000;
-    font-size: 48px;
+    font-size: clamp(1.2rem, 2vw, 2.6rem);
     font-style: normal;
     font-weight: 500;
     line-height: 56px;
@@ -34,19 +36,20 @@
 .title p
 {
     text-align: center;
-    font-size: 16px;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.08px;
 }
 .job
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     background: #fff;
     border-radius: 24px;
-    gap: 40px;
+    gap: clamp(22px, 2vw, 40px);
 }
 .job_list:nth-child(2)
 {
@@ -55,7 +58,7 @@
 .job_list
 {
     display: flex;
-    padding: 32px 40px;
+    padding: clamp(20px, 2vw, 32px) clamp(26px, 2vw, 40px);
     flex-direction: column;
     align-items: flex-start;
 }
@@ -77,24 +80,24 @@
 .logo h6
 {
     color: #1C1C1E;
-    font-size: 24px;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0.12px;
 }
 .logo img
 {
-    width: 48px;
-    height: 48px;
+    width: clamp(38px, 2vw, 48px);
+    height: clamp(38px, 2vw, 48px);
 }
 .text
 {
-    width: 282px;
+    width: clamp(200px, 70vw, 282px);
 }
 .text p
 {
     color: #636366;
-    font-size: 16px;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -106,4 +109,47 @@
 .job_list:nth-child(2) .text p
 {
     color: #D1D1D6;
+}
+@media (max-width: 1130px)
+{
+    .job
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "a b"
+        "c .";
+    }
+    .job_list:nth-child(2)
+    {
+        grid-area: c;
+        transform: translateX(clamp(170px, 2vw, 0px));
+    }
+    .job_list
+    {
+        border-radius: 20px;
+    }
+    .container
+    {
+        height: 950px;
+    }
+}
+@media (max-width: 740px)
+{
+    .job
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+    }
+    .job_list:nth-child(2)
+    {
+        grid-area: b;
+        transform: translateX(0);
+    }
+    .container
+    {
+        height: 1350px;
+    }
 }

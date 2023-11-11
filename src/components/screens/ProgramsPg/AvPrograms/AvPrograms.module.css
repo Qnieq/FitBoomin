@@ -45,28 +45,17 @@
 }
 .aplication
 {
-    width: 700px;
+    width: clamp(300px, 2vw, 700px);
 }
 .aplication h2
 {
     color: #171725;
-    font-size: 40px;
+    font-size: clamp(20px, 2vw, 40px);
     font-style: normal;
     font-weight: 600;
     line-height: 48px;
     letter-spacing: 0.2px;
     text-align: center;
-}
-@media (max-width: 2560px)
-{
-    .aplication
-    {
-        width: calc(300px + (700 - 300) * ((100vw - 320px) / (2560 - 320)));
-    }
-    .aplication h2
-    {
-        font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (2560 - 320)));
-    }
 }
 @media (max-width: 767px)
 {

@@ -70,8 +70,6 @@ const StaffTeam = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.team_list}>
                 <div className={styles.team_item}>
                     <div className={styles.team_item_img}>
                         <img src="images/coach4.png" alt="team-1" />

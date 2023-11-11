@@ -10,7 +10,7 @@
 .membership
 {
     background: #F9F9FB;
-    width: calc(100% - 960px);
+    width: clamp(60%, 90vw, 1460px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,12 +52,12 @@
 }
 .aplication
 {
-    width: 700px;
+    width: clamp(250px, 90vw, 700px);
 }
 .aplication h4
 {
     color: #171725;
-    font-size: 40px;
+    font-size: clamp(24px, 2vw, 40px);
     font-weight: 500;
     line-height: 48px;
     letter-spacing: 0.2px;
@@ -73,7 +73,42 @@
 }
 .plan
 {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: flex-start;
     gap: 32px;
+}
+@media (max-width: 906px)
+{
+    .plan
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        " a b "
+        " c . ";
+    }
+
+    .membership_content
+    {
+        align-items: center;
+    }
+    .container
+    {
+        height: 2100px;
+    }
+}
+@media (max-width: 595px)
+{
+    .plan
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        " a "
+        " b "
+        " c ";
+    }
+    .container
+    {
+        height: 2600px;
+    }
 }

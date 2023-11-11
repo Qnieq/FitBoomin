@@ -154,7 +154,6 @@
 .socialMedia
 {
     display: flex;
-    width: 240px;
     height: 40px;
     justify-content: center;
     align-items: flex-start;
@@ -302,7 +301,7 @@
     }
     .socialMedia
     {
-        transform: translateX(calc(40px + (250 - 40) * ((100vw - 320px) / (1101 - 320))));
+        transform: translateX(calc(40px + (180 - 40) * ((100vw - 320px) / (1101 - 320))));
     }
 }
 @media (max-width: 900px)

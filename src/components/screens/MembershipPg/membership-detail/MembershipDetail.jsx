@@ -6,6 +6,7 @@ import Review from "../../../ui/Review/Review";
 import Footer from "../../../ui/Footer/Footer";
 import { useSelector } from "react-redux";
 import { useActions } from "../../../../hooks/useActions";
+import styles from "./membershipDetail.module.css"
 
 const MembershipDetail = () => {
     const { id } = useParams()
@@ -20,12 +21,12 @@ const MembershipDetail = () => {
     }, [getPlansById])
     
     return (
-        <>
+        <div className={styles.container}>
             <TopBarWhite />
             <DetailsPurchase item={planId} />
             <Review />
             <Footer />
-        </>
+        </div>
     );
 }
 

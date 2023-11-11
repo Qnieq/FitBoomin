@@ -9,10 +9,11 @@
 }
 .plan_container
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 960px);
+    width: clamp(310px, 80vw, 1400px);
 }
 .about_plan
 {
@@ -31,7 +32,7 @@
 .title h6
 {
     color:#1C1C1E;
-    font-size: 72px;
+    font-size: clamp(30px, 5vw, 72px);
     font-weight: 500;
     line-height: 80px;
     letter-spacing: 0.36px;
@@ -42,7 +43,7 @@
 }
 .title p
 {
-    width: 500px;
+    width: clamp(260px, 30vw, 500px);
     color:#636366;
     font-size: 16px;
     font-weight: 400;
@@ -100,16 +101,16 @@
 .about_title
 {
     color: #1C1C1E;
-    font-size: 24px;
+    font-size: clamp(16px, 1vw, 24px);
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0.12px;
 }
 .desc
 {
-    width: 760px;
+    width: clamp(260px, 47vw, 760px);
     color:#636366;
-    font-size: 18px;
+    font-size: clamp(14px, 1vw, 18px);
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.09px;
@@ -146,16 +147,16 @@
 .purchase_title h5
 {
     color:#1C1C1E;
-    font-size: 18px;
+    font-size: clamp(14px, 1vw, 18px);
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0.09px;
 }
 .purchase_title p
 {
-    width: 351px;
+    width: clamp(260px, 30vw, 351px);
     color: #636366;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 16px);
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -228,8 +229,8 @@ label
 label input
 {
     display: flex;
+    width: auto;
     height: 52px;
-    padding: 0px 16px;
     align-items: center;
     align-self: stretch;
 }
@@ -247,7 +248,7 @@ input[type="number"]:focus {
 .price
 {
     color: #09080D;
-    font-size: 40px;
+    font-size: clamp(24px, 3vw, 40px);
     font-weight: 500;
     line-height: 48px;
     letter-spacing: 0.2px;
@@ -255,7 +256,7 @@ input[type="number"]:focus {
 .price span
 {
     color:#8E8E93;
-    font-size: 14px;
+    font-size: clamp(11px, 3vw, 14px);
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.07px;
@@ -271,11 +272,11 @@ input[type="number"]:focus {
 {
     display: flex;
     width: 100%;
-    padding: 16px;
+    padding: clamp(10px, 2vw, 16px);
     justify-content: center;
     align-items: center;
     border-radius: 24px;
-    font-size: 16px;
+    font-size: clamp(10px, 3vw, 16px);
     font-weight: 500;
     line-height: 24px; 
     letter-spacing: 0.08px;
@@ -286,11 +287,11 @@ input[type="number"]:focus {
     background: #bcff5e;
     border: none;
     display: flex;
-    padding: 16px;
+    padding: clamp(10px, 2vw, 16px);
     justify-content: center;
     align-items: center;
     border-radius: 24px;
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
     font-weight: 500;
     line-height: 24px; 
     letter-spacing: 0.08px;
@@ -301,4 +302,30 @@ input[type="number"]:focus {
 {
     background: none;
     border: 1px solid #1C1C1E;
+}
+@media (max-width: 1279px)
+{
+    .container
+    {
+        height: calc(2300px + (1800 - 2300) * ((100vw - 320px) / (1279 - 320)));;
+    }
+    .plan_container
+    {
+        grid-template-columns: 0.5fr;
+        gap: 40px;
+        justify-content: center;
+    }
+}
+@media (max-width: 740px)
+{
+    .plan_container
+    {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-content: space-between;
+    }
+    .about_plan
+    {
+        align-items: center;
+    }
 }
