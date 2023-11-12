@@ -44,7 +44,7 @@ const SignUpContainer = () => {
                             </label>
                             <div className={styles.agree}>
                                 <input type="checkbox" onChange={checkboxHandler} />
-                                <p>I agree to Claraa <Link>Terms of Use</Link> and <Link>Privacy Policy</Link></p>
+                                <p>I agree to Claraa <Link>Terms of Use</Link> <span>and</span> <Link>Privacy Policy</Link></p>
                             </div>
                         </form>
                         <div className={styles.already}>

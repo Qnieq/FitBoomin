@@ -1,8 +1,9 @@
 .container
 {
     display: flex;
+    position: fixed;
     width: 100%;
-    height: 1315px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     background: rgba(9, 8, 13, 0.12);
@@ -12,7 +13,7 @@
 .popUp
 {
     display: inline-flex;
-    padding: 48px;
+    padding: 48px clamp(20px, 7vw, 48px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,7 +26,7 @@
 .content
 {
     display: flex;
-    width: 500px;
+    width: clamp(250px, 30vw, 500px);
     flex-direction: column;
     align-items: center;
     gap: 48px;
@@ -34,7 +35,7 @@
 {
     color:#1C1C1E;
     text-align: center;
-    font-size: 32px;
+    font-size: clamp(26px, 3vw, 32px);
     font-style: normal;
     font-weight: 500;
     line-height: 40px; 
@@ -42,19 +43,20 @@
 }
 .content h3 span
 {
-    font-size: 32px;
+    font-size: clamp(26px, 3vw, 32px);
     font-weight: 400;
 }
 .variants
 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 32px;
 }
 .cta
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: flex-start;
     gap: 24px;
 }
@@ -67,7 +69,7 @@
 {
     display: flex;
     width: 238px;
-    padding: 16px 20px;
+    padding: 16px clamp(16px, 7vw, 20px);
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -75,7 +77,7 @@
     border-radius: 24px;
     border: 1px solid #E9EBED;
     color: #1C1C1E;
-    font-size: 14px;
+    font-size: clamp(12px, 3vw, 14px);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.07px;
@@ -90,20 +92,18 @@
 .login h6
 {
     color:  #8E8E93;
-    font-size: 14px;
+    width: 108px;
+    text-align: center;
+    font-size: clamp(12px, 3vw, 14px);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.07px;
 }
 .login span
 {
-    width: 177px;
+    width: clamp(25px, 11vw, 177px);
     height: 1px;
     background: #E9EBED;
-}
-form
-{
-    align-items: flex-start;
 }
 form label
 {
@@ -116,7 +116,6 @@ form label
 .email
 {
     padding-left: 25px;
-    width: 460px;
 }
 .email::placeholder
 {
@@ -141,7 +140,7 @@ form label button
     border-radius: 24px;
     background: #BCFF5E;
     color: #1C1C1E;
-    font-size: 16px;
+    font-size: clamp(14px, 1vw, 16px);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -211,16 +210,19 @@ input[type="checkbox"]::before {
 .agree p
 {
     color: #AEAEB2;
-    font-size: 14px;
+    font-size: clamp(12px, 0.8vw, 14px);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.07px;
-    display: contents;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 0.1fr 1fr;
+    align-items: center;
 }
 .agree p a
 {
     color:#064BB4;
-    font-size: 14px;
+    font-size: clamp(12px, 0.8vw, 14px);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.07px;
@@ -236,7 +238,7 @@ input[type="checkbox"]::before {
 .already p
 {
     color: #8E8E93;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 16px);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -244,7 +246,7 @@ input[type="checkbox"]::before {
 .already p a
 {
     color:#064BB4;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 16px);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.08px;  
@@ -252,12 +254,51 @@ input[type="checkbox"]::before {
 .close
 {
     display: flex;
-    padding: 8px;
+    padding: 19px;
     align-items: flex-start;
     gap: 10px;
-    transform: translate(295px, -360px);
     border-radius: 32px;
     position: absolute;
+    top: 256px;
     background: #F9F9FB;
-    box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.10);
+    box-shadow: 0px 7px 16px 6px rgb(15 15 15 / 14%);
+}
+@media (max-width: 1420px)
+{
+    .cta
+    {
+        grid-template-columns: 1fr;
+    }
+    .close
+    {
+        top: 200px;
+    }
+}
+@media (max-width: 1120px)
+{
+    .agree p
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr  ;
+        grid-template-areas: 
+        "a . ."
+        "b c d";
+    }
+    .agree p a:nth-child(1)
+    {
+        grid-area: b;
+    }
+    .agree p span
+    {
+        grid-area: c;
+        text-align: center;
+    }
+    .agree p a:nth-child(3)
+    {
+        grid-area: d;
+    }
+    .close
+    {
+        top: 160px;
+    }
 }

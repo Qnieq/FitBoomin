@@ -44,7 +44,7 @@ const SignInContainer = () => {
                                 Email
                                 <input type="text" placeholder="Enter your email" className={styles.email} />
                             </label>
-                            <label>
+                            <label className={styles.pas}>
                                 Password
                                 <input
                                     type={values.showPassword ? "text" : "password"}
@@ -53,7 +53,7 @@ const SignInContainer = () => {
                                     value={values.password}
                                     placeholder='Enter your password'
                                 />                                        
-                                <InputAdornment className={styles.passwordIcon}>
+                                <InputAdornment className={styles.password}>
                                         <IconButton
                                             onClick={handleClickShowPassword}
                                             onMouseDown={handleMouseDownPassword}
@@ -62,7 +62,7 @@ const SignInContainer = () => {
                                         </IconButton>
                                 </InputAdornment>
                             </label>
-                            <Link to={'/FitBoomin/'}><button>Login</button></Link>
+                            <Link to={'/FitBoomin/'}><button className={styles.button}>Login</button></Link>
                         </form>
                         <div className={styles.already}>
                             <Link to={'/sign-in/forgot-password'}>Forgot Password?</Link>
