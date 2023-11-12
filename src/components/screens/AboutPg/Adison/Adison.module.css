@@ -1,7 +1,7 @@
 .container
 {
     width: 100%;
-    height: 925px;
+    height: clamp(600px, 70vw, 925px);
     background: #064BB4;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
 .about_me
 {
     display: flex;
-    width: calc(100% - 960px);
+    width: clamp(300px, 70vw, 1400px);
     justify-content: center;
     flex-direction: column;
     transform: translateY(79px);
@@ -30,7 +30,7 @@
 .about_me_title h5
 {
     color:#BCFF5E;
-    font-size: 14px;
+    font-size: clamp(10px, 3vw, 14px);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.07px;
@@ -42,12 +42,12 @@
 }
 .about_adison
 {
-    width: 510px;
+    width: clamp(260px, 28vw, 510px);
 }
 .about_adison h6
 {
     color: #FFF;
-    font-size: 72px;
+    font-size: clamp(36px, 3vw, 72px);
     font-weight: 400;
     line-height: 80px; 
     letter-spacing: 0.36px;
@@ -55,7 +55,7 @@
 .about_adison span
 {
     color:#FFF;
-    font-size: 72px;
+    font-size: clamp(36px, 3vw, 72px);
     font-weight: 500;
     line-height: 80px;
     letter-spacing: 0.36px;
@@ -70,17 +70,17 @@
 }
 .story h2
 {
-    color: var(--additional-colors-white, #FFF);
-    font-size: 24px;
+    color: #FFF;
+    font-size: clamp(19px, 2vw, 24px);
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0.12px;
 }
 .story p
 {
-    width: 535px;
-    color: var(--grayscale-20, #D1D1D6);
-    font-size: 18px;
+    width: clamp(300px, 25vw, 535px);
+    color: #D1D1D6;
+    font-size: clamp(12px, 1vw, 18px);
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.09px;
@@ -90,20 +90,19 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 620px;
 }
 .about_me_img img
 {
-    width: 579px;
-    height: 558px;
+    width: clamp(300px, 40vw, 579px);
+    height: clamp(280px, 40vw, 558px);
 }
 .experience
 {
     display: inline-flex;
     position: absolute;
-    padding: 20px;
+    padding: clamp(5px, 4vw, 20px);
     align-items: flex-start;
-    width: 213px;
+    width: clamp(50px, 15vw, 213px);
     gap: 8px;
     border-radius: 16px;
     background: linear-gradient(76deg, rgba(255, 255, 255, 0.24) 3.01%, rgba(255, 255, 255, 0.00) 112.22%);
@@ -112,8 +111,8 @@
 }
 .experience img
 {
-    width: 32px;
-    height: 32px;
+    width: clamp(20px, 3vw, 32px);
+    height: clamp(20px, 3vw, 32px);
 }
 .title
 {
@@ -125,7 +124,7 @@
 .title h3
 {
     color:#FFF;
-    font-size: 32px;
+    font-size: clamp(16px, 2vw, 32px);
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 0.16px;
@@ -133,18 +132,32 @@
 .title p
 {
     color:#FFF;
-    font-size: 14px;
+    font-size: clamp(10px, 1vw, 14px);
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.07px;
 }
 .experience:nth-last-child(1)
 {
-    transform: translate(100%, -350px);
+    transform: translate(100%, calc(-60px + (-250 - 60) * ((100vw - 320px) / (2560 - 320))));
 }
 .experience:nth-last-child(2)
 {
-    transform: translate(-120%, -150px);
+    transform: translate(clamp(-160%, 20vw, -120%), calc(-20px + (-190 - 20) * ((100vw - 320px) / (2560 - 320))));
     background: linear-gradient(257deg, rgba(255, 255, 255, 0.24) -18.18%, rgba(255, 255, 255, 0.00) 118.08%);
     box-shadow: 48px 48px 80px 0px rgba(8, 23, 45, 0.12);
+}
+@media (max-width: 943px)
+{
+    .experience img
+    {
+        display: none;
+    }
+}
+@media (max-width: 850px)
+{
+    .story
+    {
+        display: none;
+    }
 }

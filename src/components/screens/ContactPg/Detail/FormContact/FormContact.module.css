@@ -1,4 +1,4 @@
-form
+.contact_form
 {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ form
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    width: 721px;
+    width: 80%;
 }
 label
 {
@@ -58,24 +58,24 @@ textarea
     border-radius: 24px;
     border: 1px solid #E9EBED;
     background: #FFF;
-    width: 721px;
+    width: calc(100% - 18px);
 }
 .btn
 {
-    width: 100%;
+    width: 80%;
     display: flex;
 }
 .btn button
 {
     display: flex;
-    padding: 16px 40px;
+    padding: clamp(12px, 2vw, 16px) clamp(32px, 2vw, 40px);
     justify-content: center;
     align-items: center;
     border-radius: 24px;
     background: #BCFF5E;
     border: none;
     color: #1C1C1E;
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -85,4 +85,15 @@ textarea
 .btn button:hover
 {
     background-color: #8cce2f
+}
+@media (max-width: 999px)
+{
+    .form_cont
+    {
+        width: 100%;
+    }
+    .btn
+    {
+        width: 100%;
+    }
 }

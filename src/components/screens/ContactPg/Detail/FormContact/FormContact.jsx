@@ -2,7 +2,7 @@ import styles from "./FormContact.module.css"
 
 const FormContact = () => {
     return (
-        <form>
+        <form className={styles.contact_form}>
             <div className={styles.form_cont}>
                 <label>
                     Full Name

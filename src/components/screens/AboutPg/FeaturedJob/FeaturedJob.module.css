@@ -1,7 +1,7 @@
 .container
 {
     background: #F9F9FB;
-    height: 1750px;
+    height: clamp(1350px, 100vw, 1750px);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% - 960px);
+    width: clamp(300px, 70vw, 1500px);
     gap: 56px;
 }
 .title
@@ -25,7 +25,7 @@
 .title h5
 {
     color: #000;
-    font-size: 48px;
+    font-size: clamp(26px, 3vw, 48px);
     font-weight: 500;
     line-height: 56px;
     letter-spacing: 0.24px;
@@ -34,11 +34,11 @@
 {
     color: #636366;
     text-align: center;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 16px);
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.08px;
-    width: 600px;
+    width: clamp(300px, 40vw, 600px);
 }
 .content_list
 {
@@ -52,14 +52,13 @@
 {
     display: flex;
     justify-content: flex-start;
-    gap: 48px;
+    gap: clamp(24px, 3vw, 48px);
     width: 100%;
 }
 .card_list
 {
-    display: flex;
-    padding: 64px 40px;
-    flex-direction: column;
+    display: grid;
+    padding: clamp(20px, 3vw, 64px) clamp(15px, 2vw, 40px);
     align-items: flex-start;
     gap: 24px;
     border-radius: 20px;
@@ -75,26 +74,39 @@
 .logo h5
 {
     color: #1C1C1E;
-    font-size: 32px;
+    font-size: clamp(20px, 2vw, 32px);
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 0.16px;
 }
 .logo img
 {
-    width: 48px;
-    height: 48px;
+    width: clamp(25px, 5vw, 48px);
+    height: clamp(25px, 5vw, 48px);
 }
 .mainImg
 {
-    width: 631px;
-    height: 365px;
+    width: clamp(250px, 30vw, 631px);
+    height: auto;
 }
 .card_list p
 {
-    width: 393px;
+    width: clamp(200px, 25vw, 365px);
+    font-size: clamp(12px, 1vw, 16px);
 }
 .value:nth-child(2)
 {
     flex-direction: row-reverse;
+}
+@media (max-width: 730px)
+{
+    .value
+    {
+        display: grid;
+        justify-content: center;
+    }
+    .container
+    {
+        height: 1750px;
+    }
 }

@@ -126,8 +126,10 @@ a
 {
     display: flex;
     position: absolute;
+    width: 195px;
+    height: 408px;
     padding: 0 10px;
-    transform: translate(-170px , 190px);
+    transform: translate(-210px , 240px);
     background: #064bb4;
     border: 1px solid #bcff5e;
     border-radius: 20px;
@@ -136,9 +138,28 @@ a
 .menu_list_mob
 {
     display: grid;
+    width: 123px;
+    height: 288px;
     gap: 20px;
     list-style: none;
     padding: 20px;
+}
+.menu_list_mob li
+{
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    border: 1.5px solid transparent;
+}
+.menu_list_mob a
+{
+    padding: 0 25px;
+}
+.menu_list_mob li:hover
+{
+    opacity: 1;
+    border-radius: 20px;
+    border: 1.5px solid #bcff5e;
 }
 @media (min-width: 1440px)
 {
@@ -188,9 +209,5 @@ a
     .container
     {
         gap: calc(50px + (300 - 50) * ((100vw - 320px) / (600 - 320)));
-    }
-    .menu_mob
-    {
-        transform: translate(-170px , 190px);
     }
 }
