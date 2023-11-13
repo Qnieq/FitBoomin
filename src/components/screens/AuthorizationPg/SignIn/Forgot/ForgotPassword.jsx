@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import PopUp from "../../PopUp";
 import styles from "./ForgotPassword.module.css"
 import LogoBlack from "../../LogoBlack/LogoBlack";
 
 const ForgotPassword = () => {
     return (
         <>
-            <PopUp />
             <div className={styles.container}>
                 <div className={styles.popUp}>
                     <Link to={'/FitBoomin/'} className={styles.close}>

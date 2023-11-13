@@ -21,7 +21,6 @@
     border-radius: 24px;
     background:#FFF;
     box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
-
 }
 .content
 {
@@ -116,10 +115,6 @@ form label
 .email
 {
     padding-left: 25px;
-}
-.email::placeholder
-{
-    padding: 25px;
 }
 form
 {
@@ -258,8 +253,6 @@ input[type="checkbox"]::before {
     align-items: flex-start;
     gap: 10px;
     border-radius: 32px;
-    position: absolute;
-    top: 256px;
     background: #F9F9FB;
     box-shadow: 0px 7px 16px 6px rgb(15 15 15 / 14%);
 }

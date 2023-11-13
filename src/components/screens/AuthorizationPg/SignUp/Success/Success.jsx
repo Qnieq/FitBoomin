@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import PopUp from "../../PopUp";
 import styles from "./Success.module.css";
 
 const Success = () => {
     return (
         <>
-            <PopUp />
             <div className={styles.container}>
                 <div className={styles.popUp}>
                     <div className={styles.title}>

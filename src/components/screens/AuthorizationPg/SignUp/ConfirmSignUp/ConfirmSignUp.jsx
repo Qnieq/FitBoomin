@@ -1,7 +1,6 @@
 import styles from "./ConfirmSigmUp.module.css"
 import { Link } from "react-router-dom"
 import LogoBlack from "../../LogoBlack/LogoBlack";
-import PopUp from "../../PopUp";
 import { useState } from "react";
 
 const ConfirmSignUp = () => {
@@ -12,7 +11,6 @@ const ConfirmSignUp = () => {
     }
     return (
         <>
-        <PopUp />
         <div className={styles.container}>
             <div className={styles.popUp}>
                 <Link to={'/FitBoomin/'} className={styles.close}>

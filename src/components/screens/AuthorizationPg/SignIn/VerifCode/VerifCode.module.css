@@ -12,7 +12,7 @@
 .popUp
 {
     display: inline-flex;
-    padding: 48px;
+    padding: 48px clamp(20px, 7vw, 48px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -20,12 +20,11 @@
     border-radius: 24px;
     background:#FFF;
     box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
-
 }
 .content
 {
     display: flex;
-    width: 500px;
+    width: clamp(250px, 30vw, 500px);
     flex-direction: column;
     align-items: center;
     gap: 48px;
@@ -34,7 +33,7 @@
 {
     color:#1C1C1E;
     text-align: center;
-    font-size: 32px;
+    font-size: clamp(26px, 3vw, 32px);
     font-style: normal;
     font-weight: 500;
     line-height: 40px; 
@@ -51,7 +50,7 @@ button
     border-radius: 24px;
     background: #BCFF5E;
     color: #1C1C1E;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 16px);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.08px;
@@ -75,14 +74,12 @@ button:disabled
 .close
 {
     display: flex;
-    padding: 8px;
+    padding: 19px;
     align-items: flex-start;
     gap: 10px;
-    transform: translate(295px, -236px);
     border-radius: 32px;
-    position: absolute;
     background: #F9F9FB;
-    box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.10);
+    box-shadow: 0px 7px 16px 6px rgb(15 15 15 / 14%);
 }
 .title
 {
@@ -93,10 +90,9 @@ button:disabled
 }
 .title p
 {
-    width: 352px;
     color: #7D7C84;
     text-align: center;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 16px);
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.08px;

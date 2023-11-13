@@ -1,7 +1,6 @@
 import styles from "./SecurityCode.module.css"
 import { Link } from "react-router-dom"
 import LogoBlack from "../../LogoBlack/LogoBlack";
-import PopUp from "../../PopUp";
 import { useState } from "react";
 
 const SecurityCode = () => {
@@ -20,7 +19,6 @@ const SecurityCode = () => {
     }
     return (
         <>
-            <PopUp />
             <div className={styles.container}>
                 <div className={styles.popUp}>
                     <Link to={'/FitBoomin/'} className={styles.close}>

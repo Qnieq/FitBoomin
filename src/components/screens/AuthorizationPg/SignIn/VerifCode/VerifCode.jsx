@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import PopUp from "../../PopUp";
 import styles from "./VerifCode.module.css"
 import LogoBlack from "../../LogoBlack/LogoBlack";
 import { useState } from "react";
@@ -20,7 +19,6 @@ const VerifCode = () => {
     }
     return (
         <>
-            <PopUp />
             <div className={styles.container}>
                 <div className={styles.popUp}>
                     <Link to={'/FitBoomin/'} className={styles.close}>

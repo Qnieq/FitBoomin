@@ -5,8 +5,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import { Link } from "react-router-dom";
 import styles from "./NewPassword.module.css"
 import { useState } from "react";
-import PopUp from '../../PopUp';
 import LogoBlack from '../../LogoBlack/LogoBlack';
+import { Box, OutlinedInput } from '@mui/material';
 
 const NewPassword = () => {
     const [values1, setValues1] = useState({
@@ -44,7 +44,6 @@ const NewPassword = () => {
 
     return (
         <>
-            <PopUp />
             <div className={styles.container}>
                 <div className={styles.popUp}>
                     <Link to={'/FitBoomin/'} className={styles.close}>
@@ -58,39 +57,55 @@ const NewPassword = () => {
                         <form>
                             <label>
                                 Password
-                                <input
-                                    type={values1.showPassword ? "text" : "password"}
-                                    onChange={handlePasswordChange1("password")}
-                                    className={styles.password}
-                                    value={values1.password}
-                                    placeholder='Enter your password'
-                                />                                        
-                                <InputAdornment className={styles.passwordIcon}>
-                                        <IconButton
-                                            onClick={handleClickShowPassword1}
-                                            onMouseDown={handleMouseDownPassword1}
-                                        >
-                                            {values1.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
-                                        </IconButton>
-                                </InputAdornment>
+                                <Box sx={{
+                                    width: "100%",
+
+                                }}>
+                                    <OutlinedInput 
+                                        type={values1.showPassword ? "text" : "password"}
+                                        onChange={handlePasswordChange1("password")}
+                                        className={styles.pass}
+                                        value={values1.password}
+                                        placeholder='Enter your password'
+
+                                        endAdornment={
+                                            <InputAdornment className={styles.password}>
+                                                <IconButton
+                                                    onClick={handleClickShowPassword1}
+                                                    onMouseDown={handleMouseDownPassword1}
+                                                >
+                                                    {values1.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
+                                                </IconButton>
+                                            </InputAdornment>
+                                        }>
+                                    </OutlinedInput>
+                                </Box>
                             </label>
                             <label>
                                 Repeat your Password
-                                <input
-                                    type={values2.showPassword ? "text" : "password"}
-                                    onChange={handlePasswordChange2("password")}
-                                    className={styles.password}
-                                    value={values2.password}
-                                    placeholder='Enter your password'
-                                />                                        
-                                <InputAdornment className={styles.passwordIcon}>
-                                        <IconButton
-                                            onClick={handleClickShowPassword2}
-                                            onMouseDown={handleMouseDownPassword2}
-                                        >
-                                            {values2.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
-                                        </IconButton>
-                                </InputAdornment>
+                                <Box sx={{
+                                    width: "100%",
+
+                                }}>
+                                    <OutlinedInput 
+                                        type={values2.showPassword ? "text" : "password"}
+                                        onChange={handlePasswordChange2("password")}
+                                        className={styles.pass}
+                                        value={values2.password}
+                                        placeholder='Enter your password'
+
+                                        endAdornment={
+                                            <InputAdornment className={styles.password}>
+                                                <IconButton
+                                                    onClick={handleClickShowPassword2}
+                                                    onMouseDown={handleMouseDownPassword2}
+                                                >
+                                                    {values2.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
+                                                </IconButton>
+                                            </InputAdornment>
+                                        }>
+                                    </OutlinedInput>
+                                </Box>
                             </label>
                             <Link to={'/successfully'}><button>Next</button></Link>
                         </form>

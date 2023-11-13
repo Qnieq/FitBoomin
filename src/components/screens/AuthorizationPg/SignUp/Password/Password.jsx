@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import styles from "./Password.module.css"
 
 import { useState } from "react";
-import PopUp from '../../PopUp';
 import LogoBlack from '../../LogoBlack/LogoBlack';
+import { Box, OutlinedInput } from '@mui/material';
 
 const Password = () => {
     const [values1, setValues1] = useState({
@@ -46,7 +46,6 @@ const Password = () => {
 
     return (
         <>
-            <PopUp />
             <div className={styles.container}>
                 <div className={styles.popUp}>
                     <Link to={'/FitBoomin/'} className={styles.close}>
@@ -56,45 +55,59 @@ const Password = () => {
                     </Link>
                     <LogoBlack />
                     <div className={styles.content}>
-                        <h3>Create Your Password</h3>
+                        <h3>Create New Password</h3>
                         <form>
                             <label>
                                 Password
-                                <input
-                                    type={values1.showPassword ? "text" : "password"}
-                                    onChange={handlePasswordChange1("password")}
-                                    className={styles.password}
-                                    value={values1.password}
-                                    placeholder='Enter your password'
-                                />                                        
-                                <InputAdornment className={styles.passwordIcon}>
-                                        <IconButton
-                                            onClick={handleClickShowPassword1}
-                                            onMouseDown={handleMouseDownPassword1}
-                                        >
-                                            {values1.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
-                                        </IconButton>
-                                </InputAdornment>
+                                <Box sx={{
+                                    width: "100%",
+                                }}>
+                                    <OutlinedInput 
+                                        type={values1.showPassword ? "text" : "password"}
+                                        onChange={handlePasswordChange1("password")}
+                                        className={styles.pass}
+                                        value={values1.password}
+                                        placeholder='Enter your password'
+
+                                        endAdornment={
+                                            <InputAdornment className={styles.password}>
+                                                <IconButton
+                                                    onClick={handleClickShowPassword1}
+                                                    onMouseDown={handleMouseDownPassword1}
+                                                >
+                                                    {values1.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
+                                                </IconButton>
+                                            </InputAdornment>
+                                        }>
+                                    </OutlinedInput>
+                                </Box>
                             </label>
                             <label>
                                 Repeat your Password
-                                <input
-                                    type={values2.showPassword ? "text" : "password"}
-                                    onChange={handlePasswordChange2("password")}
-                                    className={styles.password}
-                                    value={values2.password}
-                                    placeholder='Enter your password'
-                                />                                        
-                                <InputAdornment className={styles.passwordIcon}>
-                                        <IconButton
-                                            onClick={handleClickShowPassword2}
-                                            onMouseDown={handleMouseDownPassword2}
-                                        >
-                                            {values2.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
-                                        </IconButton>
-                                </InputAdornment>
+                                <Box sx={{
+                                    width: "100%",
+                                }}>
+                                    <OutlinedInput 
+                                        type={values2.showPassword ? "text" : "password"}
+                                        onChange={handlePasswordChange2("password")}
+                                        className={styles.pass}
+                                        value={values2.password}
+                                        placeholder='Enter your password'
+
+                                        endAdornment={
+                                            <InputAdornment className={styles.password}>
+                                                <IconButton
+                                                    onClick={handleClickShowPassword2}
+                                                    onMouseDown={handleMouseDownPassword2}
+                                                >
+                                                    {values2.showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
+                                                </IconButton>
+                                            </InputAdornment>
+                                        }>
+                                    </OutlinedInput>
+                                </Box>
                             </label>
-                            <Link to={'/success'}><button>Next</button></Link>
+                            <Link to={'/successfully'}><button>Next</button></Link>
                         </form>
                     </div>
                 </div>
