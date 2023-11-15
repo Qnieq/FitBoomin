@@ -9,8 +9,12 @@ import styles from "./Password.module.css"
 import { useState } from "react";
 import LogoBlack from '../../LogoBlack/LogoBlack';
 import { Box, OutlinedInput } from '@mui/material';
+import { useActions } from '../../../../../hooks/useActions';
 
 const Password = () => {
+
+    const { addPassword } = useActions()
+
     const [values1, setValues1] = useState({
         password: "",
         showPassword: false,
@@ -107,7 +111,7 @@ const Password = () => {
                                     </OutlinedInput>
                                 </Box>
                             </label>
-                            <Link to={'/successfully'}><button>Next</button></Link>
+                            <Link to={'/successfully'} onClick={() => addPassword(values2.password)}><button>Next</button></Link>
                         </form>
                     </div>
                 </div>

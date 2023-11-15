@@ -2,14 +2,34 @@ import { Link } from "react-router-dom";
 import LogoBlack from "../LogoBlack/LogoBlack";
 import styles from "./SignUpContainer.module.css"
 import { useState } from "react";
+import { useActions } from "../../../../hooks/useActions";
+import validator from "validator";
 
 const SignUpContainer = () => {
     const [agree, setAgree] = useState(false);
 
+    const [values, setValues] = useState('');
+
+    const { addEmail } = useActions();
+    
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState(null);
+
+
     const checkboxHandler = () => {
         setAgree(!agree);
     }
-    
+    const changeHandler = event => {
+        const emails = event.target.value
+        if (!validator.isEmail(event.target.value)) {
+            setError('Email is invalid');
+          } else {
+            setError(null);
+          }
+          setEmail(event.target.value);
+
+        setValues(emails)
+    }
 
     return (
         <>
@@ -37,8 +57,17 @@ const SignUpContainer = () => {
                         <form>
                             <label>
                                 Email
-                                <input type="text" placeholder="Enter your email" className={styles.email} />
-                                <Link to={'/sign-up/confirm'}><button disabled={!agree}>Continue</button></Link>
+                                <input 
+                                    type="email" 
+                                    placeholder="Enter your email" 
+                                    className={styles.email} 
+                                    onChange={changeHandler}
+                                    value={email}
+                                />
+                                {error == null ? <></> : <h4 className={styles.validation}>{error}</h4>}
+                                <Link to={'/sign-up/confirm'} onClick={() => addEmail(values)}>
+                                    <button disabled={error == null && values.length >= 3 ? !agree : true}>Continue</button>
+                                </Link>
                             </label>
                             <div className={styles.agree}>
                                 <input type="checkbox" onChange={checkboxHandler} />

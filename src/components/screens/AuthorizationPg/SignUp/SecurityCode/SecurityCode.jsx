@@ -2,20 +2,15 @@ import styles from "./SecurityCode.module.css"
 import { Link } from "react-router-dom"
 import LogoBlack from "../../LogoBlack/LogoBlack";
 import { useState } from "react";
+import VerificationInput from "react-verification-input";
 
 const SecurityCode = () => {
     const [agree, setAgree] = useState(false);
-    const [value, setValue] = useState();
 
-    const checkboxHandler = event => {
-        const result = event.target.value.replace(/\D/g, '');
-
-        setValue(result);
-        if(event.target.value.length < 6){
-            setAgree(false);
-        } else {
-            setAgree(true);
-        }
+    const handler = nativeEvent => {
+        const result = nativeEvent.target.value;
+        console.log(result.length);
+        result.length >= 6 ? setAgree(true) : setAgree(false);
     }
     return (
         <>
@@ -32,7 +27,21 @@ const SecurityCode = () => {
                             <h3>Enter your security code</h3>
                             <p>We texted your code to email</p>
                         </div>
-                        <input type="text" minLength={0} maxLength={6} value={value} onChange={checkboxHandler} />
+                        <VerificationInput 
+                            validChars="0-9" 
+                            length={6}
+                            containerProps={{
+                                onChange: (e) => {
+                                    handler(e);
+                                }
+                            }}
+                            classNames={{
+                                container: styles.validation,
+                                character: styles.character,
+                                characterInactive: styles.characterInactive,
+                                characterSelected: styles.characterSelected,
+                            }}
+                        />
                         <Link to={'/sign-up/password'}><button disabled={!agree}>Continue</button></Link>
                     </div>
                 </div>
