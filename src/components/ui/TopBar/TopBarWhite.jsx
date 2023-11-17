@@ -6,7 +6,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
 import { useContext, useState } from "react";
 import { useActions } from "../../../hooks/useActions";
-import { AuthContext } from "../../Provider/authProvider";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const TopBarWhite = () => {
 
