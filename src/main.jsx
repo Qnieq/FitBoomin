@@ -9,15 +9,15 @@ import AuthProvider from './components/Provider/AuthProvider'
 
 let persistor = persistStore(store);
 
-  ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
 
-    <React.StrictMode>
-      <Provider store={store} >
-        <PersistGate loading={null} persistor={persistor}>
-          <AuthProvider>
-            <Routing />
-          </AuthProvider>
-        </PersistGate>
-      </Provider>
-    </React.StrictMode>,
-  )
+  <React.StrictMode>
+    <Provider store={store} >
+      <PersistGate loading={null} persistor={persistor}>
+        <AuthProvider>
+          <Routing />
+        </AuthProvider>
+      </PersistGate>
+    </Provider>
+  </React.StrictMode>,
+)
