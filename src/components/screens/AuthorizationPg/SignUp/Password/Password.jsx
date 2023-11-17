@@ -3,9 +3,7 @@ import IconButton from '@mui/material/IconButton';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import InputAdornment from '@mui/material/InputAdornment';
 import { Link } from "react-router-dom";
-
 import styles from "./Password.module.css"
-
 import { useState } from "react";
 import LogoBlack from '../../LogoBlack/LogoBlack';
 import { Box, OutlinedInput } from '@mui/material';
@@ -62,6 +60,8 @@ const Password = () => {
                         <h3>Create New Password</h3>
                         <form>
                             <label>
+                                {values2.password.length >= 6 && values1.password.length >= 6 ? 
+                                <></> : <h5>Password must contain at least 6 characters</h5>}
                                 Password
                                 <Box sx={{
                                     width: "100%",
@@ -85,6 +85,7 @@ const Password = () => {
                                         }>
                                     </OutlinedInput>
                                 </Box>
+                                {values1.password == values2.password ?  <></> : <h4>Passwords don't match</h4>}
                             </label>
                             <label>
                                 Repeat your Password
@@ -110,8 +111,13 @@ const Password = () => {
                                         }>
                                     </OutlinedInput>
                                 </Box>
+                                {values1.password == values2.password ?  <></> : <h4>Passwords don't match</h4>}
                             </label>
-                            <Link to={'/successfully'} onClick={() => addPassword(values2.password)}><button>Next</button></Link>
+                            <Link to={'/success'} onClick={() => addPassword(values2.password)}>
+                                <button disabled={values1.password == values2.password && 
+                                values2.password.length >= 6 && values1.password.length >= 6 ?
+                                false : true}>Next</button>
+                            </Link>
                         </form>
                     </div>
                 </div>

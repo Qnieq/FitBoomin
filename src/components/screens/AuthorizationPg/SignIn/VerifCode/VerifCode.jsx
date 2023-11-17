@@ -2,20 +2,15 @@ import { Link } from "react-router-dom";
 import styles from "./VerifCode.module.css"
 import LogoBlack from "../../LogoBlack/LogoBlack";
 import { useState } from "react";
+import VerificationInput from "react-verification-input";
 
 const VerifCode = () => {
     const [agree, setAgree] = useState(false);
-    const [value, setValue] = useState();
 
-    const checkboxHandler = event => {
-        const result = event.target.value.replace(/\D/g, '');
+    const handler = nativeEvent => {
+        const result = nativeEvent.target.value;
 
-        setValue(result);
-        if(event.target.value.length < 6){
-            setAgree(false);
-        } else {
-            setAgree(true);
-        }
+        result.length >= 6 ? setAgree(true) : setAgree(false);
     }
     return (
         <>
@@ -32,8 +27,22 @@ const VerifCode = () => {
                             <h3>Enter your verification code</h3>
                             <p>We texted your code to email</p>
                         </div>
-                        <input type="text" minLength={0} maxLength={6} value={value} onChange={checkboxHandler} />
-                        <Link to={'/sign-ip/new-password'}><button disabled={!agree}>Continue</button></Link>
+                        <VerificationInput 
+                            validChars="0-9" 
+                            length={6}
+                            containerProps={{
+                                onChange: (e) => {
+                                    handler(e);
+                                }
+                            }}
+                            classNames={{
+                                container: styles.validation,
+                                character: styles.character,
+                                characterInactive: styles.characterInactive,
+                                characterSelected: styles.characterSelected,
+                            }}
+                        />
+                        <Link to={'/sign-in/new-password'}><button disabled={!agree}>Continue</button></Link>
                     </div>
                 </div>
             </div>

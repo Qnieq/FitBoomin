@@ -1,8 +1,24 @@
 import { Link } from "react-router-dom";
 import styles from "./ForgotPassword.module.css"
 import LogoBlack from "../../LogoBlack/LogoBlack";
+import { useState } from "react";
+import validator from "validator";
 
 const ForgotPassword = () => {
+
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState(null);
+
+    const changeHandler = event => {
+        if (!validator.isEmail(event.target.value)) {
+            setError('Email is invalid');
+          } else {
+            setError(null);
+          }
+          setEmail(event.target.value);
+
+    }
+
     return (
         <>
             <div className={styles.container}>
@@ -21,10 +37,17 @@ const ForgotPassword = () => {
                         <div className={styles.field}>
                             <label>
                                 Email
+                                <input 
+                                    type="email" 
+                                    placeholder="Enter your email" 
+                                    className={styles.email} 
+                                    onChange={changeHandler}
+                                    value={email}
+                                />
+                                {error == null ? <></> : <h4 className={styles.validation}>{error}</h4>}
                             </label>
-                            <input type="text" placeholder="Enter your email" />
                         </div>
-                        <Link to={'/sign-in/verification'}><button>Next</button></Link>
+                        <Link to={'/sign-in/verification'}><button disabled={error == null && email.length >= 3 ? false : true}>Next</button></Link>
                     </div>
                 </div>
             </div>

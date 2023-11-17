@@ -4,7 +4,9 @@ import styles from "./TopBarBlue.module.css"
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
 import IconButton from '@mui/material/IconButton';
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Provider/authProvider";
+import { useActions } from "../../../hooks/useActions";
 
 
 const TopBarBlue = () => {
@@ -17,6 +19,10 @@ const TopBarBlue = () => {
         setActions({ ...actions, openMenu: !actions.openMenu });
         setInProp(!inProp)
     };
+
+    const {user, setUser} = useContext(AuthContext)
+
+    const { logoutUser } = useActions()
 
     return (
         <div className={styles.cssContainer}>
@@ -98,23 +104,38 @@ const TopBarBlue = () => {
                                                 opacity: isActive ? 1 : 0.56,
                                             })}>Contact</NavLink>
                                         </li>
-                                        <li className={styles.menu_item}>
-                                            <NavLink to="/sign-in" style={() => ({
-                                                color: '#fff'
-                                            })}>Sign In</NavLink>
-                                        </li>
-                                        <li className={styles.menu_item}>
-                                            <NavLink to="/sign-up" style={() => ({
-                                                color: '#bcff5e'
-                                            })}>Sign Up</NavLink>
-                                        </li>
+                                        {user == true ? 
+                                            <button className={styles.logout_menu} onClick={() => {setUser(false), logoutUser()}}>Logout</button>
+                                            :
+                                            <>
+                                                <li className={styles.menu_item}>
+                                                    <NavLink to="/sign-in" style={() => ({
+                                                        color: '#fff'
+                                                    })}>Sign In</NavLink>
+                                                </li>
+                                                <li className={styles.menu_item}>
+                                                    <NavLink to="/sign-up" style={() => ({
+                                                        color: '#bcff5e'
+                                                    })}>Sign Up</NavLink>
+                                                </li>
+                                            </>
+                                        }
                                     </ul>
                                 </div> : <></> }
                         </div>
                         {/* <Link to="/membership/cart"><img src="/public/images/buy.png" alt="buycart" className={styles.buy}/><span className={styles.count}>{cart.length}</span></Link> */}
+
                         <div className={styles.auth}>
-                            <Link to={'/sign-in'} className={styles.log_in}>Log In</Link>
-                            <Link to={'/sign-up'} className={styles.sign_up}>Sign Up</Link>
+                            {user == true ? 
+                                <div>
+                                    <button className={styles.logout} onClick={() => {setUser(false), logoutUser()}}>Logout</button>
+                                </div>
+                                : 
+                                <>
+                                    <Link to={'/sign-in'} className={styles.log_in}>Log In</Link>
+                                    <Link to={'/sign-up'} className={styles.sign_up}>Sign Up</Link>
+                                </>
+                            }
                         </div>
                     </div>
                 </div>
