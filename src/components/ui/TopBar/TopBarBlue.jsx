@@ -5,7 +5,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
 import IconButton from '@mui/material/IconButton';
 import { useContext, useState } from "react";
-import { AuthContext } from "../../Provider/authProvider";
+import { AuthContext } from "../../Provider/AuthProvider";
 import { useActions } from "../../../hooks/useActions";
 
 
