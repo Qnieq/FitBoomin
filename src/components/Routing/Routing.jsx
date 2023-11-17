@@ -40,7 +40,7 @@ const Routing = () => {
                 <Route path="/success" element={<Success />} />
                 <Route path="/sign-in/forgot-password" element={<ForgotPassword />} />
                 <Route path="/sign-in/verification" element={<VerifCode />} />
-                <Route path="/sign-ip/new-password" element={<NewPassword />} />
+                <Route path="/sign-in/new-password" element={<NewPassword />} />
                 <Route path="/successfully" element={<Successfully />} />
 
                 <Route path="*" element={<div>Not Found</div>} />

@@ -143,7 +143,7 @@ a
     display: flex;
     position: absolute;
     width: 195px;
-    height: 408px;
+    height: 428px;
     padding: 0 10px;
     transform: translate(-210px , 240px);
     background: #f9f9fb;
@@ -165,7 +165,8 @@ a
     padding: 5px 0;
     display: flex;
     justify-content: center;
-    border: 1.5px solid transparent;
+    border: 2px solid transparent;
+    transition: 0.5s;
 }
 .menu_list_mob a
 {
@@ -173,9 +174,21 @@ a
 }
 .menu_list_mob li:hover
 {
+    background-color: #fff;
     opacity: 1;
     border-radius: 20px;
-    border: 1.5px solid #1C1C1E;
+    border: 2px solid #bcff5e;
+}
+.logout_menu
+{
+    padding: 11px;
+    background: transparent;
+    border: 2px solid #bcff5e;
+    transition: 0.5s;
+}
+.logout_menu:hover
+{
+    background-color: #cff895;
 }
 @media (min-width: 1440px)
 {

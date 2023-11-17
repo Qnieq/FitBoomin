@@ -97,16 +97,21 @@ button:disabled
     line-height: 24px;
     letter-spacing: 0.08px;
 }
-.content input
+.validation
 {
-    display: flex;
-    height: 52px;
-    padding: 0px 120px ;
-    align-items: center;
-    align-self: stretch;
-    border-radius: 24px;
-    border: 1px solid #E9EBED;
-    background: #FFF;
-    font-size: 18px;
-    letter-spacing: 30px;
+    width: 100%;
+    height: clamp(40px, 5vw, 50px);
+}
+.character
+{
+    line-height: clamp(40px, 5vw, 50px);
+    flex-basis: 0;
+    border-radius: 20px;
+    background: transparent;
+    font-size: clamp(16px, 2vw, 24px);
+}
+.characterSelected
+{
+    outline: 2px solid #73bb0e;
+    border: 1px solid transparent;
 }

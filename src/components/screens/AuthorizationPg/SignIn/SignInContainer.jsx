@@ -7,7 +7,9 @@ import LogoBlack from "../LogoBlack/LogoBlack";
 import styles from "./SignInContainer.module.css"
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { useState } from "react";
-import { Box, createTheme } from '@mui/material';
+import { Box } from '@mui/material';
+import validator from "validator";
+
 
 const SignInContainer = () => {
     const [values, setValues] = useState({
@@ -27,6 +29,18 @@ const SignInContainer = () => {
         setValues({ ...values, [prop]: event.target.value });
     };
 
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState(null);
+
+    const changeHandler = event => {
+        if (!validator.isEmail(event.target.value)) {
+            setError('Email is invalid');
+          } else {
+            setError(null);
+          }
+          setEmail(event.target.value);
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.popUp}>
@@ -43,7 +57,14 @@ const SignInContainer = () => {
                     <form>
                         <label>
                             Email
-                            <input type="text" placeholder="Enter your email" className={styles.email} />
+                            <input 
+                                    type="email" 
+                                    placeholder="Enter your email" 
+                                    className={styles.email} 
+                                    onChange={changeHandler}
+                                    value={email}
+                                />
+                                {error == null ? <></> : <h4 className={styles.validation}>{error}</h4>}
                         </label>
                         <label className={styles.pas}>
                             Password

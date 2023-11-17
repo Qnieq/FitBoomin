@@ -112,10 +112,6 @@ form label
     align-items: flex-start;
     gap: 32px;
 }
-.email
-{
-    padding-left: 25px;
-}
 form
 {
     display: flex;

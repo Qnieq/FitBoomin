@@ -9,6 +9,7 @@ import LogoBlack from '../../LogoBlack/LogoBlack';
 import { Box, OutlinedInput } from '@mui/material';
 
 const NewPassword = () => {
+
     const [values1, setValues1] = useState({
         password: "",
         showPassword: false,
@@ -56,10 +57,11 @@ const NewPassword = () => {
                         <h3>Create New Password</h3>
                         <form>
                             <label>
+                                {values2.password.length >= 6 && values1.password.length >= 6 ? 
+                                <></> : <h5>Password must contain at least 6 characters</h5>}
                                 Password
                                 <Box sx={{
                                     width: "100%",
-
                                 }}>
                                     <OutlinedInput 
                                         type={values1.showPassword ? "text" : "password"}
@@ -80,12 +82,12 @@ const NewPassword = () => {
                                         }>
                                     </OutlinedInput>
                                 </Box>
+                                {values1.password == values2.password ?  <></> : <h4>Passwords don't match</h4>}
                             </label>
                             <label>
                                 Repeat your Password
                                 <Box sx={{
                                     width: "100%",
-
                                 }}>
                                     <OutlinedInput 
                                         type={values2.showPassword ? "text" : "password"}
@@ -106,8 +108,13 @@ const NewPassword = () => {
                                         }>
                                     </OutlinedInput>
                                 </Box>
+                                {values1.password == values2.password ?  <></> : <h4>Passwords don't match</h4>}
                             </label>
-                            <Link to={'/successfully'}><button>Next</button></Link>
+                            <Link to={'/successfully'}>
+                                <button disabled={values1.password == values2.password && 
+                                values2.password.length >= 6 && values1.password.length >= 6 ?
+                                false : true}>Next</button>
+                            </Link>
                         </form>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ const SecurityCode = () => {
 
     const handler = nativeEvent => {
         const result = nativeEvent.target.value;
-        console.log(result.length);
+        
         result.length >= 6 ? setAgree(true) : setAgree(false);
     }
     return (
