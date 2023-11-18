@@ -48,11 +48,11 @@
 form .pass
 {
     display: flex;
-    border-radius: 24px;
+    border-radius: 20px;
     gap: 8px;
     width: 100%;
+    border-radius: 20px;
 }
-
 form input
 {
     display: flex;
@@ -60,6 +60,8 @@ form input
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+    border-radius: 20px;
+    border: 2px solid #d0d2d3;
 }
 .passwordIcon
 {

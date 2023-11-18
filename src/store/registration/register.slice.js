@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { sendUsers } from "./register.actions";
+import { getAuthUsers } from "../login/login.actions";
 
 export const registerSlice = createSlice({
     name: "register",
     initialState: {
+        isExist: false,
         email: "",
         password: "",
         isLoading: false,
@@ -12,6 +14,7 @@ export const registerSlice = createSlice({
     reducers: {
         addEmail: (state, {payload: email}) => {
             state.email = email;
+            state.isExist = false
         },
         addPassword: (state, {payload: password}) => {
             state.password = password;
@@ -19,6 +22,10 @@ export const registerSlice = createSlice({
         logoutUser: (state) => {
             state.email = ""
             state.password = ""
+            state.isExist = false
+        },
+        removeIsExist: (state) => {
+            state.isExist = false
         }
     },
     extraReducers: (builder) => {
@@ -26,14 +33,18 @@ export const registerSlice = createSlice({
           .addCase(sendUsers.pending, (state) => {
             state.isLoading = true;
           })
-          .addCase(sendUsers.fulfilled, (state, action) => {
+          .addCase(sendUsers.fulfilled, (state) => {
             state.isLoading = false;
-            state.user = action.payload;
+          })
+          .addCase(getAuthUsers.fulfilled, (state) => {
+            state.isExist = "exist";
+          })
+          .addCase(getAuthUsers.rejected, (state) => {
+            state.isExist = "not exist";
           })
           .addCase(sendUsers.rejected, (state, action) => {
             state.isLoading = false;
             state.error = action.payload.error;
-            state.user = [];
           });
       }
 });

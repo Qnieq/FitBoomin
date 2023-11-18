@@ -2,16 +2,30 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import IconButton from '@mui/material/IconButton';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import InputAdornment from '@mui/material/InputAdornment';
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import LogoBlack from "../LogoBlack/LogoBlack";
 import styles from "./SignInContainer.module.css"
 import OutlinedInput from '@mui/material/OutlinedInput';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Box } from '@mui/material';
 import validator from "validator";
+import { useActions } from '../../../../hooks/useActions';
+import { useLogin } from '../../../../hooks/useLogin';
+
 
 
 const SignInContainer = () => {
+
+    useEffect(() => {
+        updateError()
+        removeCorrect()
+    }, [])
+
+    const { getAuthUsers, addAuthPassword } = useActions();
+    const { removeCorrect, updateError, removeAll, removeAuth, logoutUser } = useActions();
+    
+    const {login} = useLogin()
+
     const [values, setValues] = useState({
         password: "",
         showPassword: false,
@@ -31,8 +45,12 @@ const SignInContainer = () => {
 
     const [email, setEmail] = useState('');
     const [error, setError] = useState(null);
+    const [zero, setZero] = useState(false);
+
+    
 
     const changeHandler = event => {
+        setZero(false)
         if (!validator.isEmail(event.target.value)) {
             setError('Email is invalid');
           } else {
@@ -41,10 +59,29 @@ const SignInContainer = () => {
           setEmail(event.target.value);
     }
 
+    const getAuth = () => {
+        if(values.password.length == 0 && email.length == 0){
+            setZero(true)
+        } else {
+            getAuthUsers(email)
+            addAuthPassword(values.password)
+        }
+    }
+
+    if (login.auth == true) {
+        return <Navigate to="/"/>
+    }
+
+    const replaceData = () => {
+        removeAuth()
+        removeAll()
+        logoutUser()
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.popUp}>
-                <Link to={'/FitBoomin/'} className={styles.close}>
+                <Link to={'/FitBoomin/'} className={styles.close} onClick={() => replaceData()}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M1.29289 1.29289C1.68342 0.902369 2.31658 0.902369 2.70711 1.29289L8 6.58579L13.2929 1.29289C13.6834 0.902369 14.3166 0.902369 14.7071 1.29289C15.0976 1.68342 15.0976 2.31658 14.7071 2.70711L9.41421 8L14.7071 13.2929C15.0976 13.6834 15.0976 14.3166 14.7071 14.7071C14.3166 15.0976 13.6834 15.0976 13.2929 14.7071L8 9.41421L2.70711 14.7071C2.31658 15.0976 1.68342 15.0976 1.29289 14.7071C0.902369 14.3166 0.902369 13.6834 1.29289 13.2929L6.58579 8L1.29289 2.70711C0.902369 2.31658 0.902369 1.68342 1.29289 1.29289Z" fill="#1C1C1E" />
                     </svg>
@@ -56,6 +93,10 @@ const SignInContainer = () => {
                     <h3>Hey there, welome back!</h3>
                     <form>
                         <label>
+                            {zero == true ? <h4>Wrong Email or Password</h4>
+                            : login.error == "not found" ? <h4>Wrong Email or Password</h4> 
+                            : <></>
+                            }
                             Email
                             <input 
                                     type="email" 
@@ -69,8 +110,7 @@ const SignInContainer = () => {
                         <label className={styles.pas}>
                             Password
                             <Box sx={{
-                                width: "100%",
-                                
+                                width: "100%", 
                             }}>
                                 <OutlinedInput type={values.showPassword ? "text" : "password"}
                                     onChange={handlePasswordChange("password")}
@@ -91,7 +131,9 @@ const SignInContainer = () => {
                                 </OutlinedInput>
                             </Box>
                         </label>
-                        <Link to={'/FitBoomin/'}><button className={styles.button}>Login</button></Link>
+                        <button className={styles.button} onClick={() => getAuth()}>
+                            Login
+                        </button>
                     </form>
                     <div className={styles.already}>
                         <Link to={'/sign-in/forgot-password'}>Forgot Password?</Link>

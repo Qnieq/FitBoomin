@@ -3,7 +3,6 @@ import styles from "./Success.module.css";
 import { useRegister } from "../../../../../hooks/useRegister";
 import { useDispatch } from "react-redux";
 import { sendUsers } from "../../../../../store/registration/register.actions";
-import { useActions } from "../../../../../hooks/useActions";
 
 const Success = () => {
 
@@ -12,7 +11,7 @@ const Success = () => {
     const dispatch = useDispatch()
     
     const sendData = async () => {
-        await dispatch(sendUsers({email: register.email, password: register.password})).unwrap()
+        await dispatch(sendUsers({id: register.email, email: register.email, password: register.password})).unwrap()
     }
 
     return (

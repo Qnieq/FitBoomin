@@ -23,6 +23,7 @@ const TopBarBlue = () => {
     const {user, setUser} = useContext(AuthContext)
 
     const { logoutUser } = useActions()
+    const { removeAuth } = useActions()
 
     return (
         <div className={styles.cssContainer}>
@@ -105,7 +106,7 @@ const TopBarBlue = () => {
                                             })}>Contact</NavLink>
                                         </li>
                                         {user == true ? 
-                                            <button className={styles.logout_menu} onClick={() => {setUser(false), logoutUser()}}>Logout</button>
+                                            <button className={styles.logout_menu} onClick={() => {setUser(false), logoutUser(), removeAuth()}}>Logout</button>
                                             :
                                             <>
                                                 <li className={styles.menu_item}>
@@ -127,8 +128,9 @@ const TopBarBlue = () => {
 
                         <div className={styles.auth}>
                             {user == true ? 
-                                <div>
-                                    <button className={styles.logout} onClick={() => {setUser(false), logoutUser()}}>Logout</button>
+                                <div className={styles.user}>
+                                    <img src="../../../../public/images/userIconWhite.png"/>
+                                    <button className={styles.logout} onClick={() => {setUser(false), logoutUser(), removeAuth()}}>Logout</button>
                                 </div>
                                 : 
                                 <>

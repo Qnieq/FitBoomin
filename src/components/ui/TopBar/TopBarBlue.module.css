@@ -178,6 +178,21 @@ a
 {
     background-color: #043b8d;
 }
+.user
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user img
+{
+    width: 30px;
+    height: 30px;
+}
+.user button
+{
+    padding: 10px 16px;
+}
 @media (min-width: 1440px)
 {
     .navBarMob

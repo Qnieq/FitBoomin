@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import styles from "./Successfully.module.css"
+import { useActions } from "../../../../../hooks/useActions";
 
 const Successfully = () => {
+
+    const {removeEmail} = useActions()
+
     return (
         <>
             <div className={styles.container}>
@@ -17,7 +21,7 @@ const Successfully = () => {
                             <p>Your password is succesfully created</p>
                         </div>
                     </div>
-                    <Link to={'/sign-in'}><button>Continue</button></Link>
+                    <Link to={'/sign-in'} onClick={() => removeEmail()}><button>Continue</button></Link>
                 </div>
             </div>
         </>
