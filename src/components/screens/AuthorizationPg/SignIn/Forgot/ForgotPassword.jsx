@@ -25,7 +25,7 @@ const ForgotPassword = () => {
 
     const [exist, setExist] = useState(false);
 
-    const { getAuthUsers } = useActions()
+    const { getUsersForNewPass } = useActions()
     const { addAuthEmail, removeCorrect } = useActions()
     const { forgot } = useForgot()
 
@@ -83,7 +83,7 @@ const ForgotPassword = () => {
                         </label>
                     </div>
                     <button
-                        onClick={() => getAuthUsers(email)}
+                        onClick={() => getUsersForNewPass(email)}
                         disabled={error == null && email.length >= 3 ? false : true}>
                         Next
                     </button>

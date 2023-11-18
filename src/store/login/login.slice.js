@@ -34,8 +34,9 @@ export const loginSlice = createSlice({
             state.email = true;
             if (action.payload.password === state.password) {
                 state.auth = true;
+            } else {
+                state.error = "not found";
             }
-            state.error = "";
           })
           .addCase(getAuthUsers.rejected, (state) => {
             state.isLoading = false;

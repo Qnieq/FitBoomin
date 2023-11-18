@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { updatePassword } from "./forgotPassword.actions";
+import { getUsersForNewPass, updatePassword } from "./forgotPassword.actions";
 import { getAuthUsers } from "../login/login.actions";
 
 export const loginSlice = createSlice({
@@ -33,10 +33,10 @@ export const loginSlice = createSlice({
           .addCase(updatePassword.fulfilled, (state) => {
             state.isLoading = false;
           })
-          .addCase(getAuthUsers.fulfilled, (state) => {
+          .addCase(getUsersForNewPass.fulfilled, (state) => {
             state.correct = "exist";
           })
-          .addCase(getAuthUsers.rejected, (state) => {
+          .addCase(getUsersForNewPass.rejected, (state) => {
             state.correct = "not exist";
           })
           .addCase(updatePassword.rejected, (state) => {
