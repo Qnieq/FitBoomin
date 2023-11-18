@@ -122,7 +122,7 @@ const TopBarWhite = () => {
                         <div className={styles.auth}>
                             {user == true ? 
                                 <div className={styles.user}>
-                                    <img src="../../../../public/images/userIconBlack.png"/>
+                                    <img src="/images/userIconBlack.png"/>
                                         <button className={styles.logout} onClick={() => {setUser(false), logoutUser(), removeAuth()}}>Logout</button>
                                     </div>
                                     : 
