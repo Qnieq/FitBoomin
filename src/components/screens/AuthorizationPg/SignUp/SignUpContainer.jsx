@@ -8,6 +8,7 @@ import { useRegister } from "../../../../hooks/useRegister";
 
 const SignUpContainer = () => {
 
+    const { removeAll, removeAuth, logoutUser } = useActions();
 
     const [agree, setAgree] = useState(false);
 
@@ -52,8 +53,6 @@ const SignUpContainer = () => {
     if (register.isExist == "not exist") {
         return <Navigate to="/sign-up/confirm" />
     }
-
-    const { removeAll, removeAuth, logoutUser } = useActions();
 
     const replaceData = () => {
         removeAuth()
