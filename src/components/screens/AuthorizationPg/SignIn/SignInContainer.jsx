@@ -23,8 +23,8 @@ const SignInContainer = () => {
 
     const { getAuthUsers, addAuthPassword } = useActions();
     const { removeCorrect, updateError, removeAll, removeAuth, logoutUser } = useActions();
-    
-    const {login} = useLogin()
+
+    const { login } = useLogin()
 
     const [values, setValues] = useState({
         password: "",
@@ -47,20 +47,20 @@ const SignInContainer = () => {
     const [error, setError] = useState(null);
     const [zero, setZero] = useState(false);
 
-    
+
 
     const changeHandler = event => {
         setZero(false)
         if (!validator.isEmail(event.target.value)) {
             setError('Email is invalid');
-          } else {
+        } else {
             setError(null);
-          }
-          setEmail(event.target.value);
+        }
+        setEmail(event.target.value);
     }
 
     const getAuth = () => {
-        if(values.password.length == 0 && email.length == 0){
+        if (values.password.length == 0 && email.length == 0) {
             setZero(true)
         } else {
             getAuthUsers(email)
@@ -69,7 +69,7 @@ const SignInContainer = () => {
     }
 
     if (login.auth == true) {
-        return <Navigate to="/"/>
+        return <Navigate to="/" />
     }
 
     const replaceData = () => {
@@ -94,23 +94,23 @@ const SignInContainer = () => {
                     <form>
                         <label>
                             {zero == true ? <h4>Wrong Email or Password</h4>
-                            : login.error == "not found" ? <h4>Wrong Email or Password</h4> 
-                            : <></>
+                                : login.error == "not found" ? <h4>Wrong Email or Password</h4>
+                                    : <></>
                             }
                             Email
-                            <input 
-                                    type="email" 
-                                    placeholder="Enter your email" 
-                                    className={styles.email} 
-                                    onChange={changeHandler}
-                                    value={email}
-                                />
-                                {error == null ? <></> : <h4 className={styles.validation}>{error}</h4>}
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                className={styles.email}
+                                onChange={changeHandler}
+                                value={email}
+                            />
+                            {error == null ? <></> : <h4 className={styles.validation}>{error}</h4>}
                         </label>
                         <label className={styles.pas}>
                             Password
                             <Box sx={{
-                                width: "100%", 
+                                width: "100%",
                             }}>
                                 <OutlinedInput type={values.showPassword ? "text" : "password"}
                                     onChange={handlePasswordChange("password")}
@@ -131,10 +131,10 @@ const SignInContainer = () => {
                                 </OutlinedInput>
                             </Box>
                         </label>
-                        <button className={styles.button} onClick={() => getAuth()}>
-                            Login
-                        </button>
                     </form>
+                    <button className={styles.button} onClick={() => getAuth()}>
+                        Login
+                    </button>
                     <div className={styles.already}>
                         <Link to={'/sign-in/forgot-password'}>Forgot Password?</Link>
                     </div>

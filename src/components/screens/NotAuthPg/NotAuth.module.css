@@ -1,17 +1,22 @@
 .cont
 {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    gap: clamp(20px, 5vw, 200px);
+    align-items: center;
     background: #F9F9FB;
 }
 .logo
 {
-    padding: 30px;
+    padding: 40px;
 }
 .container
 {
     display: flex;
     width: 100%;
-    height: 80vh;
     align-items: center;
     justify-content: center;
     background: #F9F9FB;
@@ -46,4 +51,12 @@
     text-align: center;
     font-weight: 600;
     font-size: clamp(20px, 2vw, 40px);
+}
+@media (max-height: 800px)
+{
+    .cont
+    {
+        position: relative;
+        height: 800px;
+    }
 }

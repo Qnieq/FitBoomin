@@ -28,7 +28,7 @@
     width: clamp(250px, 30vw, 500px);
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 20px;
 }
 .content h3
 {
@@ -169,7 +169,7 @@ input[type="checkbox"] {
     color: #EAEDF1;
     width: 24px;
     height: 24px;
-    border: 0.15em solid #EAEDF1;
+    border: 0.15em solid #bebebe;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
     display: grid;
@@ -209,6 +209,7 @@ input[type="checkbox"]::before {
     width: 100%;
     grid-template-columns: 1fr 1fr 0.1fr 1fr;
     align-items: center;
+    justify-items: center;
 }
 .agree p a
 {
@@ -270,6 +271,10 @@ input[type="checkbox"]::before {
 }
 @media (max-width: 1120px)
 {
+    .agree
+    {
+        align-items: flex-start;
+    }
     .agree p
     {
         grid-template-columns: 1fr 1fr 1fr;

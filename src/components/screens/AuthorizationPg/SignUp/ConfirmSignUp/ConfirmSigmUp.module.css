@@ -90,7 +90,7 @@ input[type="checkbox"] {
     color: #EAEDF1;
     width: 24px;
     height: 24px;
-    border: 0.15em solid #EAEDF1;
+    border: 0.15em solid #bebebe;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
     display: grid;

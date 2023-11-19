@@ -115,12 +115,18 @@ a
     width: 40px;
     height: 40px;
     z-index: 2;
+    margin-left: 0;
 }
 .menuIconButton svg
 {
     width: 40px;
     height: 40px;
     color: #fff;
+    margin-left: 0;
+}
+.menuIconButton:hover svg
+{
+    transform: translateX(0px)
 }
 .menu_mob
 {

@@ -60,6 +60,7 @@ const SignUpContainer = () => {
         logoutUser()
     }
 
+
     return (
         <div className={styles.container}>
             <div className={styles.popUp}>
@@ -82,7 +83,7 @@ const SignUpContainer = () => {
                             <span></span>
                         </div>
                     </div>
-                    <form>
+                    <form >
                         <label>
                             {exist == true ?
                                 <h4>Email already registered</h4>
@@ -98,17 +99,17 @@ const SignUpContainer = () => {
                                 value={email}
                             />
                             {error == null ? <></> : <h4 className={styles.validation}>{error}</h4>}
-                            <button
-                                onClick={() => getAuthUsers(email)}
-                                disabled={error == null && values.length >= 3 ? !agree : true}>
-                                Continue
-                            </button>
                         </label>
-                        <div className={styles.agree}>
-                            <input type="checkbox" onChange={checkboxHandler} />
-                            <p>I agree to Claraa <Link>Terms of Use</Link> <span>and</span> <Link>Privacy Policy</Link></p>
-                        </div>
                     </form>
+                    <button
+                        onClick={() => getAuthUsers(email)}
+                        disabled={error == null && values.length >= 3 ? !agree : true}>
+                        Continue
+                    </button>
+                    <div className={styles.agree}>
+                        <input type="checkbox" onChange={checkboxHandler} />
+                        <p>I agree to Claraa <Link>Terms of Use</Link> <span>and</span> <Link>Privacy Policy</Link></p>
+                    </div>
                     <div className={styles.already}>
                         <p>Already have an account? <Link to={'/sign-in'}>Log In</Link></p>
                     </div>

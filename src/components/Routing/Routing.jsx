@@ -34,7 +34,7 @@ const Routing = () => {
                 <Route path="/membership/:id" element={<MembershipDetail />} />
                 <Route path="/membership/payment/:id" element={<Payment />} />
                 <Route path="/sign-in" element={<SignIn />} />
-                <Route path="/sign-up" element={<SignUp />} />
+                <Route path="?/sign-up" element={<SignUp />} />
                 <Route path="/sign-up/confirm" element={<ConfirmSignUp />} />
                 <Route path="/sign-up/confirm/code" element={<SecurityCode />} />
                 <Route path="/sign-up/password" element={<Password />} />
