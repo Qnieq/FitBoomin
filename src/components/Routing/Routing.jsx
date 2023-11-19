@@ -17,6 +17,7 @@ import ForgotPassword from "../screens/AuthorizationPg/SignIn/Forgot/ForgotPassw
 import VerifCode from "../screens/AuthorizationPg/SignIn/VerifCode/VerifCode";
 import NewPassword from "../screens/AuthorizationPg/SignIn/Password/NewPassword";
 import Successfully from "../screens/AuthorizationPg/SignIn/Successfully/Successfully";
+import NotAuth from "../screens/NotAuthPg/NotAuth";
 
 
 const Routing = () => {
@@ -42,6 +43,8 @@ const Routing = () => {
                 <Route path="/sign-in/verification" element={<VerifCode />} />
                 <Route path="/sign-in/new-password" element={<NewPassword />} />
                 <Route path="/successfully" element={<Successfully />} />
+
+                <Route path="/none-auth" element={<NotAuth />} />
 
                 <Route path="*" element={<div>Not Found</div>} />
             </Routes>

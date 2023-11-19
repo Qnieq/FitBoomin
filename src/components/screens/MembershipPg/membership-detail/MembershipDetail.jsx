@@ -7,6 +7,7 @@ import Footer from "../../../ui/Footer/Footer";
 import { useSelector } from "react-redux";
 import { useActions } from "../../../../hooks/useActions";
 import styles from "./membershipDetail.module.css"
+import { withAuth } from "../../../HOC/withAuth";
 
 const MembershipDetail = () => {
     const { id } = useParams()
@@ -30,4 +31,4 @@ const MembershipDetail = () => {
     );
 }
 
-export default MembershipDetail;
+export default withAuth(MembershipDetail);

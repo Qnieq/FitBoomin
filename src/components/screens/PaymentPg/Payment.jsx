@@ -4,6 +4,7 @@ import PaymentDetail from "./payment-detail/PaymentDetail";
 import Footer from "../../ui/Footer/Footer";
 import { Navigate } from "react-router-dom";
 import styles from "./payment.module.css"
+import { withAuth } from "../../HOC/withAuth";
 
 const Payment = () => {
     const {purchaseNow} = usePurchaseNow()
@@ -20,4 +21,4 @@ const Payment = () => {
     );
 }
 
-export default Payment;
+export default withAuth(Payment);

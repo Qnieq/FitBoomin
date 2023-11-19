@@ -1,3 +1,4 @@
+import { withAuth } from "../../HOC/withAuth";
 import Footer from "../../ui/Footer/Footer";
 import TopBarWhite from "../../ui/TopBar/TopBarWhite";
 import Detail from "./Detail/Detail";
@@ -13,4 +14,4 @@ const Contact = () => {
     );
 }
 
-export default Contact;
+export default withAuth(Contact);

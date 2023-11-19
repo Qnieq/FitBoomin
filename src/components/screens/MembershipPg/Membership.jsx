@@ -1,3 +1,4 @@
+import { withAuth } from "../../HOC/withAuth";
 import Footer from "../../ui/Footer/Footer";
 import Review from "../../ui/Review/Review";
 import TopBarWhite from "../../ui/TopBar/TopBarWhite";
@@ -15,4 +16,4 @@ const Membership = () => {
     );
 }
 
-export default Membership;
+export default withAuth(Membership);
