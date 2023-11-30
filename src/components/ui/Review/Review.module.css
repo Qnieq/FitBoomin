@@ -58,16 +58,16 @@
 }
 .content
 {
-    width: 680px;
+    width: clamp(300px, 50vw, 680px);
     height: 260px;
     display: inline-flex;
     align-items: flex-start;
     gap: 16px;
 }
-
 .description
 {
     display: flex;
+    width: clamp(250px, 40vw, 621px);
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -83,7 +83,7 @@
 .text
 {
     overflow: auto;
-    width: 642px;
+    width: clamp(250px, 40vw, 621px);
     height: 192px;
 }
 .text p
@@ -133,35 +133,40 @@
 }
 .action
 {
-    width: 130px;
+    width: 100%;
     height: 35px;
     display: inline-flex;
+    justify-content: space-evenly;
     align-items: center;
     gap: 16px;
 }
-.slider
+.left
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    rotate: 180deg;
+    width: 40px;
+    padding: 10px;
 }
-.slider div
+.left img
 {
-    background: #064BB4;
-    border-radius: 8px;
-    width: 16px;
-    height: 8px;
+    width: 20px;
+    height: 20px;
 }
+.right
+{
+    width: 40px;
+    padding: 10px;
+}
+.right img
+{
+    width: 20px;
+    height: 20px;
+}
+
 @media (max-width: 1700px)
 {
     .comments
     {
         gap: calc(80px + (43 - 80) * ((100vw - 320px) / (1700 - 320)));
-    }
-    .content
-    {
-        width: calc(300px + (680 - 300) * ((100vw - 320px) / (1700 - 320)));
     }
     .aplication
     {
@@ -170,10 +175,6 @@
     .aplication h2
     {
         font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1700 - 320)));
-    }
-    .text
-    {
-        width: calc(250px + (642 - 250) * ((100vw - 320px) / (1700 - 320)));
     }
     .text p
     {

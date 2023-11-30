@@ -1,44 +1,52 @@
-import { useEffect, useState } from "react"
+import { useState } from "react";
 import styles from "./Review.module.css"
- 
+import Comment from "./ccomment/Comment";
+
+
 const Review = () => {
-    
-    const myObjects = [
-        { id: 1, name: '1'},
-        { id: 2, name: '2'},
-        { id: 3, name: '3'},
+
+    const [index, setIndex] = useState(0)
+
+    const comments = [
+        {
+            id: 0, 
+            name: 'Davis Rosser',
+            text: 'Eget aliquet sit at lacinia. Magna consequat consectetur maecenas amet sagittis mi. Mattis cursus dolor amet quam commodo amet in sed dui. Risus risus sed sed lectus.', 
+            img: 'images/user.png'
+        },
+        {
+            id: 1, 
+            name: 'Will Burnett',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio sit quas accusantium quam itaque, officiis magni facilis exercitationem eligendi?', 
+            img: 'images/male.jpg'
+        },
+        {
+            id: 2, 
+            name: 'Jean Graves',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat dolore nobis fugit libero soluta animi fugiat saepe nulla, ab commodi iste voluptas inventore similique amet illo, temporibus eaque cumque?', 
+            img: 'images/famale.jpg'
+        },
     ]
 
-
-    const [appState, changeState] = useState({
-        activeObject: myObjects[1],
-        objects: myObjects,
-    })
-
-    const [count, setCount] = useState(1)
-    useEffect(() => {
-        if (count == 0){
-            setCount(1)
-        } else if (count >= 4){
-            setCount(3)
+    function leftShiftHandler() {
+        if(index - 1 < 0) {
+            setIndex(comments.length - 1);
         }
-    }, [count])
-
-
-    
-
-    function toggleActive(index) {
-        changeState({ ...appState, activeObject: appState.objects[index] })
-    }
-
-    function toggleActiveStyles(index) {
-        if (appState.objects[index] === appState.activeObject) {
-            return "details active"
-        } else {
-            return "details inactive"
+        else {
+            setIndex(index - 1);
         }
     }
-    
+
+    function rightShiftHandler() {
+        if(index + 1 >=comments.length) {
+            setIndex(0);
+        }
+        else {
+            setIndex(index+1);
+        }
+
+    }
+
     return (
         <div className={styles.review}>
             <div className={styles.comments}>
@@ -54,82 +62,11 @@ const Review = () => {
                     <div className={styles.notation}>
                         <img src="images/vuesax-bold-quote-up.png" alt="" />
                     </div>
-                    <div className={toggleActiveStyles(1)}>
-                        <div className={styles.description}>
-                            <div className={styles.member}>
-                                <h6>Member Review</h6>
-                            </div>
-                            <div className={styles.text}>
-                                <p>Eget aliquet sit at lacinia. Magna consequat consectetur maecenas amet sagittis mi. Mattis cursus dolor amet quam commodo amet in sed dui. Risus risus sed sed lectus. </p>
-                            </div>
-                        </div>
-                        <div className={styles.user_info}>
-                            <div className={styles.user}>
-                                <img src="images/user.png" alt="" />
-                            </div>
-                            <div className={styles.user_name}>
-                                <h6>Davis Rosser</h6>
-                                <div className={styles.user_class}>
-                                    <h6>Member</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={toggleActiveStyles(2)}>
-                        <div className={styles.description}>
-                            <div className={styles.member}>
-                                <h6>Member Review</h6>
-                            </div>
-                            <div className={styles.text}>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio sit quas accusantium quam itaque, officiis magni facilis exercitationem eligendi? </p>
-                            </div>
-                        </div>
-                        <div className={styles.user_info}>
-                            <div className={styles.user}>
-                                <img src="images/male.jpg" alt="" />
-                            </div>
-                            <div className={styles.user_name}>
-                                <h6>Will Burnett</h6>
-                                <div className={styles.user_class}>
-                                    <h6>Member</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={toggleActiveStyles(3)}>
-                        <div className={styles.description}>
-                            <div className={styles.member}>
-                                <h6>Member Review</h6>
-                            </div>
-                            <div className={styles.text}>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat dolore nobis fugit libero soluta animi fugiat saepe nulla, ab commodi iste voluptas inventore similique amet illo, temporibus eaque cumque? </p>
-                            </div>
-                        </div>
-                        <div className={styles.user_info}>
-                            <div className={styles.user}>
-                                <img src="images/famale.jpg" alt="" />
-                            </div>
-                            <div className={styles.user_name}>
-                                <h6>Jean Graves</h6>
-                                <div className={styles.user_class}>
-                                    <h6>Member</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Comment comment={comments[index]} />
                 </div>
                 <div className={styles.action}>
-                    <div className={styles.left}>
-                        <img src="images/arrow-left-slider.png" alt="" onClick={() => {setCount(count-1), toggleActive(count)}}/>
-                    </div>
-                    <div className={styles.slider}>
-                        <div></div>
-                        <img src="images/slider-ecllips.png" alt="" />
-                        <img src="images/slider-ecllips.png" alt="" />
-                    </div>
-                    <div className={styles.right}>
-                        <img src="images/arrow-right-slider.png" alt="" onClick={() => {setCount(count+1), toggleActive(count)}} />
-                    </div>
+                    <button className={styles.left} onClick={() => leftShiftHandler()}><img src="images\arrow-right-slider.png" alt="" /></button>
+                    <button className={styles.right} onClick={() => rightShiftHandler()}><img src="images\arrow-right-slider.png" alt="" /></button>
                 </div>
             </div>
         </div>

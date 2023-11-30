@@ -1,4 +1,3 @@
-import { withAuth } from "../../HOC/withAuth";
 import Footer from "../../ui/Footer/Footer";
 import GetStarted from "../../ui/GetStarted/GetStarted";
 import TopBarWhite from "../../ui/TopBar/TopBarWhite";
@@ -18,4 +17,4 @@ const Trainers = () => {
     );
 }
 
-export default withAuth(Trainers);
+export default Trainers;

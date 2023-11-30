@@ -1,4 +1,3 @@
-import { withAuth } from "../../HOC/withAuth";
 import Footer from "../../ui/Footer/Footer";
 import Review from "../../ui/Review/Review";
 import TopBarBlue from "../../ui/TopBar/TopBarBlue";
@@ -18,4 +17,4 @@ const About = () => {
     );
 }
 
-export default withAuth(About);
+export default About;
