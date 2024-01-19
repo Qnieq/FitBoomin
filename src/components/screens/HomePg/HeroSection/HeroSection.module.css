@@ -141,10 +141,6 @@
     align-items: flex-end;
     gap: 32px;
 }
-.brends img
-{
-     width: ;
-}
 .book
 {
     display: inline-flex;
@@ -192,6 +188,7 @@
     font-weight: 600;
     line-height: 48px;
     letter-spacing: 0.2px;
+    color: #FFF;
 }
 .progText p
 {
@@ -199,6 +196,7 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.08px;
+    color: #D1D1D6;
 }
 @media (max-width: 2560px)
 {
@@ -221,7 +219,7 @@
     {
         height: 800px;
         width: 700px;
-        transform: translate(70px, 70px);
+        transform: translate(200px, 70px);
     }
 }
 @media (max-width: 1439px)
@@ -265,7 +263,7 @@
     {
         height: 800px;
         width: 700px;
-        transform: translate(180px, 70px);
+        transform: translate(260px, 70px);
     }
 }
 @media (max-width: 1124px)
